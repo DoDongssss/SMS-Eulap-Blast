@@ -23,7 +23,8 @@
 
 /* TEMPLATE */
 html,body{
-  @apply font-montserrat
+  @apply font-montserrat;
+  scroll-behavior: smooth;
 }
 
 /* ASSETS */
