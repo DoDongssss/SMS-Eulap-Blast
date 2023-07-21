@@ -16,7 +16,7 @@
                         <span class="absolute px-4 py-2 bg-primary/95 rounded-md text-white left-[80px] skew-x-[-15deg] text-[1vw] mt-12">Send Using File</span>
                         <span class="absolute px-4 py-2 bg-primary/95 rounded-md text-white left-[80px] skew-x-[-15deg] shadow-lg text-[1vw] mt-[95px]">Campaign Builder</span>
                     </div>
-                    <img src="images/indexVector.png" alt="">
+                    <img src="/images/indexVector.png" alt="">
                 </div>
             </div>  
         </div>
