@@ -2,7 +2,7 @@
     <div class="flex w-full xl:h-screen p-12 flex-col items-center xl:flex-row">
         <div class="h-full flex items-center justify-center w-[80%] xl:w-[60%]">
             <div class="h-full w-[50vw] xl:w-[70vw] flex items-center justify-center">
-                <img src="images/Vector2.png" alt="" class="w-full">
+                <img src="/images/Vector2.png" alt="" class="w-full">
             </div>
         </div>  
         <div class="flex flex-col items-center justify-center w-[100%] sm:w-[90%] xl:w-[40%] px-12 ">
