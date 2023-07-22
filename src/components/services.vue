@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col items-center justify-center w-full p-6 xl:p-12">
-        <h1 class="font-[900] text-4xl text-default">Features</h1>
+        <h1 class="font-[900] text-3xl text-default">Features</h1>
         <div class="flex flex-wrap items-start gap-12 justify-center w-full mt-[3rem] xl:mt-[6rem]">
             <div class="card w-96 bg-secondary/50 text-default shadow-xl xl:mt-[100px]">
                 <div class="card-body p-6">

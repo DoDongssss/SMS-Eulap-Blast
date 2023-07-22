@@ -1,6 +1,6 @@
 <template>
     <div class="bg-base-200">
-        <footer class="footer flex flex-col items-center px-6 py-12 xl:px-12 text-default gap-0">
+        <footer class="footer flex flex-col items-center p-6 xl:px-12 text-default gap-0">
             <div class="h-auto w-full flex py-6">
                 <div class="w-full h-full flex flex-wrap items-center justify-between gap-12">
                     <div class="flex flex-wrap gap-6">

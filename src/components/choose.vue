@@ -2,7 +2,7 @@
     <div class="flex flex-col items-center justify-center p-6 xl:p-12 mt-[50px]">
         <h1 class="font-[900] text-2xl xl:text-4xl text-default text-center">Why Choose Eulap SMS Blast?</h1>
         <div class="flex flex-wrap gap-6 xl:gap-12 items-start xl:items-center justify-center mt-[3rem] xl:mt-[5rem]">
-            <div class="flex flex-col xl:flex-row items-center justify-center gap-6 w-full xl:w-[550px]px-10 py-5 bg-white rounded-xl c-box-shadow p-6">
+            <div class="flex flex-col xl:flex-row items-center justify-center gap-6 w-full xl:w-[550px] px-10 py-5 bg-white rounded-xl c-box-shadow p-6">
                 <div class="flex justify-center">
                     <img src="/images/integration.png" alt="" class="w-[25%] xl:w-[70%]">
                 </div>
@@ -11,7 +11,7 @@
                     <p class="text-default text-justify">Easily integrate our SMS Blast solution with your existing systems and applications for a hassle-free experience.</p>
                 </div>
             </div>
-            <div class="flex flex-col xl:flex-row items-center justify-center gap-6 w-full xl:w-[550px]px-10 py-5 bg-white rounded-xl c-box-shadow p-6">
+            <div class="flex flex-col xl:flex-row items-center justify-center gap-6 w-full xl:w-[550px] px-10 py-5 bg-white rounded-xl c-box-shadow p-6">
                 <div class="flex justify-center">
                     <img src="/images/scalable.png" alt="" class="w-[25%] xl:w-[70%]">
                 </div>
@@ -20,7 +20,7 @@
                     <p class="text-default text-justify">Whether you have a small customer base or millions of recipients, our platform scales to meet your requirements.</p>
                 </div>
             </div>
-            <div class="flex flex-col xl:flex-row items-center justify-center gap-6 w-full xl:w-[550px]px-10 py-5 bg-white rounded-xl c-box-shadow p-6">
+            <div class="flex flex-col xl:flex-row items-center justify-center gap-6 w-full xl:w-[550px] px-10 py-5 bg-white rounded-xl c-box-shadow p-6">
                 <div class="flex justify-center">
                     <img src="/images/scalable.png" alt="" class="w-[25%] xl:w-[70%]">
                 </div>

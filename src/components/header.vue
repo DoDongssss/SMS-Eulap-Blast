@@ -1,19 +1,20 @@
 <template>
     <div class="sticky top-0 flex items-center justify-between h-[80px] bg-white/50 px-6 xl:px-12 drop-shadow-xl z-50">
-        <div class="navbar-start w-auto">
+        <div class="md:hidden navbar-start w-auto">
             <div class="dropdown">
               <label tabindex="0" class="btn btn-ghost btn-circle text-default">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
               </label>
-              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a>Homepage</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>About</a></li>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-4 z-[1] p-4 shadow bg-secondary rounded-box w-52 gap-4">
+                <li class="list-none text-default cursor-pointer text-[1.2rem] hover:text-primary">Home</li>
+                <li class="list-none text-default cursor-pointer text-[1.2rem] hover:text-primary">About</li>
+                <li class="list-none text-default cursor-pointer text-[1.2rem] hover:text-primary">Features</li>
+                <li class="list-none text-default cursor-pointer text-[1.2rem] hover:text-primary">How it works</li>
               </ul>
             </div>
         </div>
         <img src="/images/logo.png" alt="" class="min-h-full max-h-[7vw]">
-        <div class="hidden xl:block">
+        <div class="hidden md:block">
             <div class="flex gap-7">
                 <li class="list-none text-default cursor-pointer text-[1.2rem] hover:text-primary">Home</li>
                 <li class="list-none text-default cursor-pointer text-[1.2rem] hover:text-primary">About</li>

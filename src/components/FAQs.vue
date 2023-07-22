@@ -1,11 +1,11 @@
 <template>
     <div class="m-h-screen flex flex-col items-center justify-center gap-6 text-default px-6 py-12 xl:p-12">
-        <h1 class="font-[900] text-5xl">FAQs</h1>
+        <h1 class="font-[900] text-4xl xl:text-5xl">FAQs</h1>
         <div class="flex items-start justify-center gap-6 mt-3 xl:mt-[5rem] flex-wrap">
             <div class="join join-vertical w-full xl:w-[550px]">
                 <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-1" /> 
-                  <div class="collapse-title text-[1.11rem] font-semibold">
+                  <div class="collapse-title text-[.9rem] xl:text-[1.11rem] font-semibold">
                     Why Eulap SMS Blast?
                   </div>
                   <div class="collapse-content"> 
@@ -14,7 +14,7 @@
                 </div>
                 <div class="collapse collapse-arrow join-item border border-t-0 border-base-300">
                   <input type="radio" name="my-accordion-1" /> 
-                  <div class="collapse-title text-[1.11rem] font-semibold">
+                  <div class="collapse-title text-[.9rem] xl:text-[1.11rem] font-semibold">
                     What is the cost of using eulap SMS Blast?
                   </div>
                   <div class="collapse-content"> 
@@ -23,7 +23,7 @@
                 </div>
                 <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-1" /> 
-                  <div class="collapse-title text-[1.11rem] font-semibold">
+                  <div class="collapse-title text-[.9rem] xl:text-[1.11rem] font-semibold">
                     Are there any charges or additional fees in processing a sms?
                   </div>
                   <div class="collapse-content"> 
@@ -32,7 +32,7 @@
                 </div>
                 <div class="collapse collapse-arrow join-item border border-t-0 border-base-300">
                     <input type="radio" name="my-accordion-1" /> 
-                    <div class="collapse-title text-[1.11rem] font-semibold">
+                    <div class="collapse-title text-[.9rem] xl:text-[1.11rem] font-semibold">
                       How can I top-up my account with payroll credits?
                     </div>
                     <div class="collapse-content"> 
@@ -41,7 +41,7 @@
                 </div>
                 <div class="collapse collapse-arrow join-item border border-t-0 border-base-300">
                     <input type="radio" name="my-accordion-1" /> 
-                    <div class="collapse-title text-[1.11rem] font-semibold">
+                    <div class="collapse-title text-[.9rem] xl:text-[1.11rem] font-semibold">
                       Is there any binding contract engaging with eulap SMS Blast?
                     </div>
                     <div class="collapse-content"> 
@@ -62,7 +62,7 @@
                 </div>
                 <div class="collapse collapse-arrow join-item border border-t-0 border-base-300">
                   <input type="radio" name="my-accordion-" /> 
-                  <div class="collapse-title text-[1.11rem] font-semibold">
+                  <div class="collapse-title text-[.9rem] xl:text-[1.11rem] font-semibold">
                     Is the system able to read a timesheet report generated from a biometric device?
                   </div>
                   <div class="collapse-content"> 
@@ -71,7 +71,7 @@
                 </div>
                 <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-" /> 
-                  <div class="collapse-title text-[1.11rem] font-semibold">
+                  <div class="collapse-title text-[.9rem] xl:text-[1.11rem] font-semibold">
                     Do you have an existing promo?
                   </div>
                   <div class="collapse-content"> 
@@ -80,7 +80,7 @@
                 </div>
                 <div class="collapse collapse-arrow join-item border border-t-0 border-base-300">
                     <input type="radio" name="my-accordion-" /> 
-                    <div class="collapse-title text-[1.11rem] font-semibold">
+                    <div class="collapse-title text-[.9rem] xl:text-[1.11rem] font-semibold">
                       How do I start using eulap SMS Blast?
                     </div>
                     <div class="collapse-content"> 
@@ -89,7 +89,7 @@
                 </div>
                 <div class="collapse collapse-arrow join-item border border-t-0 border-base-300">
                     <input type="radio" name="my-accordion-" /> 
-                    <div class="collapse-title text-[1.11rem] font-semibold">
+                    <div class="collapse-title text-[.9rem] xl:text-[1.11rem] font-semibold">
                       Is Eulap SMS Blast, a cloud based system?
                     </div>
                     <div class="collapse-content"> 
