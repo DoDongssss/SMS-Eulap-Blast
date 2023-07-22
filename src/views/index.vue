@@ -25,7 +25,7 @@
         <worksView/>
         <FAQsView />
         <footerView/>
-        <backtotopView v-if="scrolltoTop"/>
+        <backtotopView id="scrolltotop" class="hidden" @click="backtotop" />
     </div>
 </template> 
 
@@ -51,22 +51,33 @@ export default {
         backtotopView
     },
     setup () {
-        const scrolltoTop = ref(false)
+        const backtotop = () => {
+            window.scrollTo(0,0);
+        }
 
         return {
-            scrolltoTop
+            backtotop
+        }
+    },
+    data (){
+        return {
+        }
+    },
+    methods: {
+        scrollTop(){
+            window.onscroll = function(e){
+                var scroll = this.scrollY;
+
+                if(scroll > 500){
+                    document.getElementById('scrolltotop').classList.remove("hidden")
+                }else{
+                    document.getElementById('scrolltotop').classList.add("hidden")
+                }
+            }
         }
     },
     mounted (){
-        window.onscroll = function (e)
-        {
-            var scroll = this.scrollY;
-            console.log(e)
-
-            if(scroll > 500){
-               this.scrolltoTop = true
-            }
-        }
+        this.scrollTop()
     }
 }
 </script>
