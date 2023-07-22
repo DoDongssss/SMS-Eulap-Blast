@@ -1,9 +1,9 @@
 <template>
     <div class="bg-base-200">
-        <footer class="footer flex flex-col items-center px-12 text-default gap-0">
+        <footer class="footer flex flex-col items-center px-6 py-12 xl:px-12 text-default gap-0">
             <div class="h-auto w-full flex py-6">
-                <div class="w-full h-full flex items-center justify-between gap-12">
-                    <div class="flex gap-6">
+                <div class="w-full h-full flex flex-wrap items-center justify-between gap-12">
+                    <div class="flex flex-wrap gap-6">
                         <div class="flex flex-col gap-3">
                             <p class="flex items-center gap-2 text-default">
                                 <span class="rounded-full bg-secondary/50">
@@ -37,7 +37,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex flex-col items-center gap-3">
+                    <div class="flex flex-col items-center gap-3 w-full xl:w-auto">
                         <p class="font-semibold text-default/80">SOCIAL NETWORKS</p>
                         <div class="flex gap-3">
                             <a class="cursor-pointer">
@@ -57,7 +57,7 @@
                 <div>
                     <span class="font-bold cursor-pointer text-primary text-[1rem]">Privacy Policy</span>
                 </div>
-                <p class="mt-1 text-default"><span class="text-primary">eulap</span> Software Solution © 2023 - All right reserved</p>
+                <p class="mt-1 text-default text-center"><span class="text-primary">eulap</span> Software Solution © 2023 - All right reserved</p>
             </div> 
         </footer>
     </div>

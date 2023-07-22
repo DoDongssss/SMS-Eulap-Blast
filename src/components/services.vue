@@ -1,9 +1,9 @@
 <template>
-    <div class="flex flex-col items-center justify-center w-full p-12">
+    <div class="flex flex-col items-center justify-center w-full p-6 xl:p-12">
         <h1 class="font-[900] text-4xl text-default">Features</h1>
-        <div class="flex flex-wrap items-start gap-12 justify-center w-full mt-[6rem]">
+        <div class="flex flex-wrap items-start gap-12 justify-center w-full mt-[3rem] xl:mt-[6rem]">
             <div class="card w-96 bg-secondary/50 text-default shadow-xl xl:mt-[100px]">
-                <div class="card-body">
+                <div class="card-body p-6">
                     <div class="flex justify-center">
                         <svg viewBox="0 0 24 24" fill="none" width="55px" height="55px" xmlns="http://www.w3.org/2000/svg" stroke="##3771C8" class="p-3 rounded-full bg-secondary/50">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -14,7 +14,7 @@
                                 <path d="M2 16.5H8" stroke="#3771C8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M2 12.5H5" stroke="#3771C8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> </g>
                         </svg>
                     </div>
-                    <h2 class="card-title justify-center mt-5">Personalized Messaging</h2>
+                    <h2 class="card-title justify-center mt-5 text-center">Personalized Messaging</h2>
                     <p class="px-5 mt-2 text-center">Send customized SMS messages to your customers, with your brand or company name on it.</p>
                     <div class="card-actions justify-center mt-6">
                         <button class="flex items-center px-4 py-[.60rem] cursor-pointer text-[1rem] text-primary transition duration-200 ease-in-out rounded-md border border-primary bg-transparent hover:bg-primary hover:text-white">Learn More</button>
@@ -47,7 +47,7 @@
                                 <path d="M2 16.5H8" stroke="#3771C8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M2 12.5H5" stroke="#3771C8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> </g>
                         </svg>
                     </div>
-                  <h2 class="card-title justify-center mt-5">Scheduling and Automation</h2>
+                  <h2 class="card-title justify-center text-center mt-5">Scheduling and Automation</h2>
                   <p class="px-5 mt-2 text-center">Plan your campaigns in advance and automate message delivery at optimal times for increased efficiency.</p>
                   <div class="card-actions justify-center mt-6">
                     <button class="flex items-center px-4 py-[.60rem] cursor-pointer text-[1rem] text-primary transition duration-200 ease-in-out rounded-md border border-primary bg-transparent hover:bg-primary hover:text-white">Learn More</button>

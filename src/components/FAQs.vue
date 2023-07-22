@@ -1,8 +1,8 @@
 <template>
-    <div class="m-h-screen flex flex-col items-center justify-center gap-6 text-default p-12">
+    <div class="m-h-screen flex flex-col items-center justify-center gap-6 text-default px-6 py-12 xl:p-12">
         <h1 class="font-[900] text-5xl">FAQs</h1>
-        <div class="flex items-start justify-center gap-6 mt-[5rem] flex-wrap">
-            <div class="join join-vertical w-[90%] xl:w-[550px]">
+        <div class="flex items-start justify-center gap-6 mt-3 xl:mt-[5rem] flex-wrap">
+            <div class="join join-vertical w-full xl:w-[550px]">
                 <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-1" /> 
                   <div class="collapse-title text-[1.11rem] font-semibold">
@@ -50,7 +50,7 @@
                 </div>
             </div>
     
-            <div class="join join-vertical w-[90%] xl:w-[550px]">
+            <div class="join join-vertical w-full xl:w-[550px]">
                 <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-"/> 
                   <div class="collapse-title text-[1.13rem] font-semibold">
