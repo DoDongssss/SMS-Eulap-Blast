@@ -1,87 +1,110 @@
 <template>
-    <div class="min-h-screen relative">
-        <headerView/>
-        <div class="flex items-center justify-center px-6 xl:px-12 h-[calc(100vh-80px)] flex-col xl:flex-row xl:mt-0">
-            <div class="flex items-center justify-center flex-col w-full xl:w-[50%]">
-                <div class="w-full md:w-[75%]">
-                    <h1 class="font-semibold text-[1.5rem] xl:text-[2.5vw] text-default text-center xl:text-start ">Transform your business communication and soar to new heights of success.</h1>
-                </div>
-                <button class="flex xl:hidden items-center mt-5 px-4 py-[.60rem] cursor-pointer text-[1rem] text-primary font-semibold transition duration-200 ease-in-out rounded-md border border-primary hover:bg-primary/80 hover:bg-primary">Get Started</button>
+   <div class="relative min-h-screen">
+      <headerView />
+      <div
+         class="flex h-[calc(100vh-80px)] flex-col items-center justify-center px-6 xl:mt-0 xl:flex-row xl:px-12"
+      >
+         <div
+            class="flex w-full flex-col items-center justify-center xl:w-[50%]"
+         >
+            <div class="w-full md:w-[75%]">
+               <h1
+                  class="text-center text-[1.5rem] font-semibold text-default xl:text-start xl:text-[2.5vw]"
+               >
+                  Transform your business communication and soar to new heights
+                  of success.
+               </h1>
             </div>
-            <div class="center w-full xl:w-[50%]">
-                <div class="w-full xl:w-[50vw] flex flex-col-reverse xl:flex-row items-center justify-center relative">
-                    <div class="w-full flex gap-2 items-center justify-center xl:mt-12">
-                        <span class="xl:absolute px-4 py-2 bg-primary/95 rounded-md text-white left-[80px] skew-x-[-15deg] flex text-[8px] xl:text-[1vw]">Quick Send </span>
-                        <span class="xl:absolute px-4 py-2 bg-primary/95 rounded-md text-white left-[80px] skew-x-[-15deg] text-[8px] xl:text-[1vw] xl:mt-[80px]">Send Using File</span>
-                        <span class="xl:absolute px-4 py-2 bg-primary/95 rounded-md text-white left-[80px] skew-x-[-15deg] shadow-lg text-[8px] xl:text-[1vw] xl:mt-[160px]">Campaign Builder</span>
-                    </div>
-                    <img src="/images/indexVector.png" alt="" class="w-full">
-                </div>
-            </div>  
-        </div>
-        <chooseView/>
-        <servicesView/>
-        <aboutView/>
-        <worksView/>
-        <FAQsView />
-        <footerView/>
-        <backtotopView id="scrolltotop" class="hidden" @click="backtotop" />
-    </div>
-</template> 
+            <button
+               class="mt-5 flex cursor-pointer items-center rounded-md border border-primary px-4 py-[.60rem] text-[1rem] font-semibold text-primary transition duration-200 ease-in-out hover:bg-primary hover:bg-primary/80 xl:hidden"
+            >
+               Get Started
+            </button>
+         </div>
+         <div class="center w-full xl:w-[50%]">
+            <div
+               class="relative flex w-full flex-col-reverse items-center justify-center xl:w-[50vw] xl:flex-row"
+            >
+               <div
+                  class="flex w-full items-center justify-center gap-2 xl:mt-12"
+               >
+                  <span
+                     class="left-[80px] flex skew-x-[-15deg] rounded-md bg-primary/95 px-4 py-2 text-[8px] text-white xl:absolute xl:text-[1vw]"
+                     >Quick Send
+                  </span>
+                  <span
+                     class="left-[80px] skew-x-[-15deg] rounded-md bg-primary/95 px-4 py-2 text-[8px] text-white xl:absolute xl:mt-[80px] xl:text-[1vw]"
+                     >Send Using File</span
+                  >
+                  <span
+                     class="left-[80px] skew-x-[-15deg] rounded-md bg-primary/95 px-4 py-2 text-[8px] text-white shadow-lg xl:absolute xl:mt-[160px] xl:text-[1vw]"
+                     >Campaign Builder</span
+                  >
+               </div>
+               <img src="/images/indexVector.png" alt="" class="w-full" />
+            </div>
+         </div>
+      </div>
+      <chooseView />
+      <servicesView />
+      <aboutView />
+      <worksView />
+      <FAQsView />
+      <footerView />
+      <backtotopView id="scrolltotop" class="hidden" @click="backtotop" />
+   </div>
+</template>
 
 <script>
-import headerView from '../../src/components/header.vue'
-import aboutView from '../../src/components/about.vue'
-import servicesView from '../../src/components/services.vue'
-import chooseView from '../../src/components/choose.vue'
-import FAQsView from '../../src/components/FAQs.vue'
-import worksView from '../../src/components/works.vue'
-import footerView from '../../src/components/footer.vue'
-import backtotopView from '../../src/components/backtotop.vue'
-import { ref } from 'vue'
+import headerView from "../../src/components/header.vue"
+import aboutView from "../../src/components/about.vue"
+import servicesView from "../../src/components/services.vue"
+import chooseView from "../../src/components/choose.vue"
+import FAQsView from "../../src/components/FAQs.vue"
+import worksView from "../../src/components/works.vue"
+import footerView from "../../src/components/footer.vue"
+import backtotopView from "../../src/components/backtotop.vue"
+import { ref } from "vue"
 export default {
-    components: {
-        headerView,
-        aboutView,
-        footerView,
-        servicesView,
-        chooseView,
-        worksView,
-        FAQsView,
-        backtotopView
-    },
-    setup () {
-        const backtotop = () => {
-            window.scrollTo(0,0);
-        }
+   components: {
+      headerView,
+      aboutView,
+      footerView,
+      servicesView,
+      chooseView,
+      worksView,
+      FAQsView,
+      backtotopView,
+   },
+   setup() {
+      const backtotop = () => {
+         window.scrollTo(0, 0)
+      }
 
-        return {
-            backtotop
-        }
-    },
-    data (){
-        return {
-        }
-    },
-    methods: {
-        scrollTop(){
-            window.onscroll = function(e){
-                var scroll = this.scrollY;
+      return {
+         backtotop,
+      }
+   },
+   data() {
+      return {}
+   },
+   methods: {
+      scrollTop() {
+         window.onscroll = function (e) {
+            var scroll = this.scrollY
 
-                if(scroll > 500){
-                    document.getElementById('scrolltotop').classList.remove("hidden")
-                }else{
-                    document.getElementById('scrolltotop').classList.add("hidden")
-                }
+            if (scroll > 500) {
+               document.getElementById("scrolltotop").classList.remove("hidden")
+            } else {
+               document.getElementById("scrolltotop").classList.add("hidden")
             }
-        }
-    },
-    mounted (){
-        this.scrollTop()
-    }
+         }
+      },
+   },
+   mounted() {
+      this.scrollTop()
+   },
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

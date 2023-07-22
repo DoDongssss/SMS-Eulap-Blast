@@ -1,22 +1,25 @@
-<template >
-    <div class="w-[50px] h-[50px] p-4 rounded-full border border-primary/50 shadow-md fixed right-12 bottom-12 cursor-pointer" >
-        <img src="/images/arrow-up.png" alt="" class="h-[full] animate-bounce arrow">
-    </div>
+<template>
+   <div
+      class="fixed bottom-12 right-12 h-[50px] w-[50px] cursor-pointer rounded-full border border-primary/50 p-4 shadow-md"
+   >
+      <img
+         src="/images/arrow-up.png"
+         alt=""
+         class="arrow h-[full] animate-bounce"
+      />
+   </div>
 </template>
 
 <script>
 export default {
-    setup () {
-        
-        return {
-        }
-    },
+   setup() {
+      return {}
+   },
 }
 </script>
 
 <style scoped>
-.arrow{
+.arrow {
    scale: 1.3;
 }
-
 </style>
