@@ -47,7 +47,7 @@
             </ul>
          </div>
       </div>
-      <img src="/images/logo.png" alt="" class="max-h-[5vw] min-h-full" py-4/>
+      <img src="/images/logo.png" alt="" class="max-h-[6vw] min-h-full  py-4"/>
       <div class="hidden md:block">
          <div class="flex gap-7">
             <li
