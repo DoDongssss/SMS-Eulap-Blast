@@ -1,5 +1,5 @@
 <template>
-   <div class="flex w-full flex-col items-center justify-center p-6 xl:p-12">
+   <div class="flex w-full flex-col items-center justify-center p-6 xl:p-12" id="features">
       <h1 class="text-3xl font-[900] text-default">Features</h1>
       <div
          class="mt-[3rem] flex w-full flex-wrap items-start justify-center gap-12 xl:mt-[6rem]"

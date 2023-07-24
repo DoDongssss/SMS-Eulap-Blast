@@ -18,7 +18,7 @@
             <button
                class="mt-5 flex cursor-pointer items-center rounded-md border border-primary px-4 py-[.60rem] text-[1rem] font-semibold text-primary transition duration-200 ease-in-out hover:bg-primary hover:bg-primary/80 xl:hidden"
             >
-               Get Started
+               <a href="sms.eulap.com">Get Started</a> 
             </button>
          </div>
          <div class="center w-full xl:w-[50%]">

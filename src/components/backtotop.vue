@@ -11,15 +11,18 @@
 </template>
 
 <script>
+
+
 export default {
    setup() {
-      return {}
+      return {
+      }
    },
 }
 </script>
 
 <style scoped>
 .arrow {
-   scale: 1.3;
+   scale: 1.7;
 }
 </style>

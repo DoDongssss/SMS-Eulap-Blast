@@ -1,6 +1,6 @@
 <template>
    <div
-      class="m-h-screen flex w-full flex-col items-center justify-center px-6 py-12 text-default xl:p-12"
+      class="m-h-screen flex w-full flex-col items-center justify-center px-6 py-12 text-default xl:p-12" id="work"
    >
       <h1 class="text-3xl font-[900] text-default xl:text-4xl">
          How it works?

@@ -1,5 +1,5 @@
 <template>
-   <div class="flex w-full flex-col items-center p-6 xl:h-screen xl:flex-row">
+   <div class="flex w-full flex-col items-center p-6 xl:h-screen xl:flex-row" id="about">
       <div class="flex h-full w-full items-center justify-center xl:w-[60%]">
          <div
             class="flex h-full w-full items-center justify-center xl:w-[70vw]"
