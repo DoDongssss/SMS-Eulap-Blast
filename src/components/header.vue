@@ -32,12 +32,12 @@
                <li
                   class="cursor-pointer list-none text-[1.2rem] text-default hover:text-primary"
                >
-                  <a class="text-[1.2rem]" href="#about">About</a> 
+               <a class="text-[1.2rem]" href="#features">Features</a> 
                </li>
                <li
                   class="cursor-pointer list-none text-[1.2rem] text-default hover:text-primary text"
                >
-                  <a class="text-[1.2rem]" href="#features">Features</a> 
+                  <a class="text-[1.2rem]" href="#about">About</a> 
                </li>
                <li
                   class="cursor-pointer list-none text-[1.2rem] text-default hover:text-primary"
@@ -47,7 +47,7 @@
             </ul>
          </div>
       </div>
-      <img src="/images/logo.png" alt="" class="max-h-[6vw] min-h-full  py-4"/>
+      <a href="#"><img src="/images/logo.png" alt="" class="max-h-[5.5vw] min-h-full  py-4"/></a>
       <div class="hidden md:block">
          <div class="flex gap-7">
             <li
@@ -58,12 +58,12 @@
             <li
                class="cursor-pointer list-none text-[1.2rem] text-default hover:text-primary"
             >
-               <a href="#about">About</a>
+            <a href="#features">Features</a>
             </li>
             <li
                class="cursor-pointer list-none text-[1.2rem] text-default hover:text-primary"
             >
-            <a href="#features">Features</a> 
+            <a href="#about">About</a> 
             </li>
             <li
                class="cursor-pointer list-none text-[1.2rem] text-default hover:text-primary"
