@@ -25,7 +25,7 @@
                               />
                            </svg>
                         </span>
-                        <span class="">+639709062140</span>
+                        <span class="">tel: +639709062140</span>
                      </p>
                      <a
                         href="https://www.eulap.com/"
@@ -180,8 +180,7 @@
                >
             </div>
             <p class="mt-1 text-center text-default">
-               <span class="text-primary">eulap</span> Software Solution © 2023
-               - All right reserved
+               eulap Software Solution © 2023 - All right reserved
             </p>
          </div>
       </footer>
