@@ -1,6 +1,6 @@
 <template>
    <div
-      class="sticky top-0 z-50 flex h-[80px] items-center justify-between bg-white/50 px-6 drop-shadow-xl xl:px-12"
+      class="sticky top-0 z-50 flex h-[80px] items-center justify-between bg-white px-6 drop-shadow-xl xl:px-12"
    >
       <div class="navbar-start w-auto md:hidden">
          <div class="dropdown">
