@@ -7,12 +7,14 @@
     --color-default: 0deg 0% 26%;
     --color-primary: 216deg 57% 50%;
     --color-secondary: 216deg 57% 80%;
+    --color-theme : 0deg 0% 100%;
   }
 }
 :root[data-theme="dark"]{
   --color-default: 216deg 57% 80% ;
   --color-primary: 216deg 57% 50%;
   --color-secondary: 0deg 0% 26%;
+  --color-theme : 212deg 18% 14%;
 }
 
 @font-face {

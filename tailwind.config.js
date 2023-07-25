@@ -16,6 +16,7 @@ module.exports = {
         default: 'hsl(var(--color-default) / <alpha-value>)',
         primary: 'hsl(var(--color-primary) / <alpha-value>)',
         secondary: 'hsl(var(--color-secondary) / <alpha-value>)',
+        theme: 'hsl(var(--color-theme) / <alpha-value>)'
       }
     },
   },
