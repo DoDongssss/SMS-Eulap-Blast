@@ -8,7 +8,7 @@
       >
          <div class="join join-vertical w-full xl:w-[550px]">
             <div
-               class="collapse join-item collapse-arrow border border-base-300"
+               class="collapse-arrow collapse join-item border border-base-300"
             >
                <input type="radio" name="my-accordion-1" />
                <div
@@ -131,7 +131,7 @@
             <div
                class="collapse-arrow collapse join-item border border-base-300"
             >
-               <input type="radio" name="my-accordion-" />
+               <input type="radio" name="my-accordion-1" />
                <div class="collapse-title text-[1.13rem] font-semibold">
                   Can I integrate an SMS Blast System with my existing software?
                </div>
@@ -147,7 +147,7 @@
             <div
                class="collapse-arrow collapse join-item border border-t-0 border-base-300"
             >
-               <input type="radio" name="my-accordion-" />
+               <input type="radio" name="my-accordion-1" />
                <div
                   class="collapse-title text-[.9rem] font-semibold xl:text-[1.11rem]"
                >
@@ -167,7 +167,7 @@
             <div
                class="collapse-arrow collapse join-item border border-base-300"
             >
-               <input type="radio" name="my-accordion-" />
+               <input type="radio" name="my-accordion-1" />
                <div
                   class="collapse-title text-[.9rem] font-semibold xl:text-[1.11rem]"
                >
@@ -186,7 +186,7 @@
             <div
                class="collapse-arrow collapse join-item border border-t-0 border-base-300"
             >
-               <input type="radio" name="my-accordion-" />
+               <input type="radio" name="my-accordion-1" />
                <div
                   class="collapse-title text-[.9rem] font-semibold xl:text-[1.11rem]"
                >
@@ -206,7 +206,7 @@
             <div
                class="collapse-arrow collapse join-item border border-t-0 border-base-300"
             >
-               <input type="radio" name="my-accordion-" />
+               <input type="radio" name="my-accordion-1" />
                <div
                   class="collapse-title text-[.9rem] font-semibold xl:text-[1.11rem]"
                >
