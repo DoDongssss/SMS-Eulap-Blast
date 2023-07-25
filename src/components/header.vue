@@ -27,48 +27,53 @@
                <li
                   class="cursor-pointer list-none text-[1.2rem] text-default hover:text-primary"
                >
-                  <a class="text-[1.2rem]" href="#">Home</a> 
+                  <a class="text-[1.2rem]" href="#">Home</a>
                </li>
                <li
                   class="cursor-pointer list-none text-[1.2rem] text-default hover:text-primary"
                >
-               <a class="text-[1.2rem]" href="#features">Features</a> 
+                  <a class="text-[1.2rem]" href="#features">Features</a>
                </li>
                <li
-                  class="cursor-pointer list-none text-[1.2rem] text-default hover:text-primary text"
+                  class="text cursor-pointer list-none text-[1.2rem] text-default hover:text-primary"
                >
-                  <a class="text-[1.2rem]" href="#about">About</a> 
+                  <a class="text-[1.2rem]" href="#about">About</a>
                </li>
                <li
                   class="cursor-pointer list-none text-[1.2rem] text-default hover:text-primary"
                >
-                  <a class="text-[1.2rem]" href="#work">How it works</a> 
+                  <a class="text-[1.2rem]" href="#work">How it works</a>
                </li>
             </ul>
          </div>
       </div>
-      <a href="#"><img src="/images/logo.png" alt="" class="max-h-[5.5vw] min-h-full  py-4"/></a>
+      <a href="#"
+         ><img
+            src="/images/logo.png"
+            alt=""
+            class="max-h-[5.5vw] min-h-full py-4"
+      /></a>
       <div class="hidden md:block">
          <div class="flex gap-7">
             <li
                class="cursor-pointer list-none text-[1.2rem] text-default hover:text-primary"
             >
-               <a href="#">Home  </a> 
+               <a href="#">Home </a>
             </li>
             <li
                class="cursor-pointer list-none text-[1.2rem] text-default hover:text-primary"
             >
-            <a href="#features">Features</a>
+               <a href="#features">Features</a>
             </li>
             <li
                class="cursor-pointer list-none text-[1.2rem] text-default hover:text-primary"
             >
-            <a href="#about">About</a> 
+               <a href="#about">About</a>
             </li>
             <li
                class="cursor-pointer list-none text-[1.2rem] text-default hover:text-primary"
             >
-              <a href="#work"> How it works  </a>
+               <a href="#work"> How it works </a>
             </li>
          </div>
       </div>
@@ -76,9 +81,9 @@
          <button
             class="hidden cursor-pointer items-center rounded-md bg-primary/80 px-4 py-[.60rem] text-[1rem] text-white transition duration-200 ease-in-out hover:bg-primary xl:flex"
          >
-         <a href="sms.eulap.com">Get Started</a> 
+            <a href="sms.eulap.com">Get started</a>
          </button>
-         <label class="swap-rotate swap">
+         <label class="swap swap-rotate">
             <!-- this hidden checkbox controls the state -->
             <input type="checkbox" @change="changeTheme" />
 
@@ -129,8 +134,6 @@
 <script>
 import { ref } from "vue"
 
-
-
 export default {
    setup() {
       const selectTheme = ref(
@@ -153,7 +156,6 @@ export default {
       return {
          changeTheme,
          selectTheme,
-      
       }
    },
 }

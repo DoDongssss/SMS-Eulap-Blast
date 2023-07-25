@@ -1,11 +1,14 @@
 <template>
-   <div class="flex w-full flex-col items-center justify-center p-6 xl:p-12" id="features">
+   <div
+      class="flex w-full flex-col items-center justify-center p-6 xl:p-12"
+      id="features"
+   >
       <h1 class="text-3xl font-[900] text-default">Features</h1>
       <div
          class="mt-[3rem] flex w-full flex-wrap items-start justify-center gap-12 xl:mt-[6rem]"
       >
          <div
-            class="card w-96 bg-secondary/50 text-default shadow-xl xl:mt-[100px]"
+            class="card h-[360px] w-96 bg-secondary/50 text-default shadow-xl xl:mt-[100px]"
          >
             <div class="card-body p-6">
                <div class="flex justify-center">
@@ -63,11 +66,11 @@
                <h2 class="card-title mt-5 justify-center text-center">
                   Personalized Messaging
                </h2>
-               <p class="mt-2 px-5  text-center">
+               <p class="mt-2 px-5 text-center">
                   Send customized SMS messages to your customers, with your
                   brand or company name on it.
                </p>
-               <div class="card-actions mt-6 justify-center ">
+               <div class="card-actions mt-6 justify-center">
                   <button
                      class="flex cursor-pointer items-center rounded-md border border-primary bg-transparent px-4 py-[.60rem] text-[1rem] text-primary transition duration-200 ease-in-out hover:bg-primary hover:text-white"
                   >
@@ -77,7 +80,9 @@
             </div>
          </div>
 
-         <div class="card w-96 bg-secondary/50 text-default shadow-xl">
+         <div
+            class="card h-[360px] w-96 bg-secondary/50 text-default shadow-xl"
+         >
             <div class="card-body">
                <div class="flex justify-center">
                   <svg
@@ -125,54 +130,59 @@
          </div>
 
          <div
-            class="card w-96 bg-secondary/50 text-default shadow-xl xl:mt-[100px]"
+            class="card h-[360px] w-96 bg-secondary/50 text-default shadow-xl xl:mt-[100px]"
          >
             <div class="card-body">
                <div class="flex justify-center">
                   <svg
-                     xmlns="http://www.w3.org/2000/svg"
-                     
-                     viewBox="0 0 522 522"
-                     version="1.0"
-                     width="50px"
-                     height="55px"
-                     enable-background="new 0 0 512 512"
-                     xml:space="preserve"
-                     fill="#000000"
-                     class="rounded-full bg-secondary/50 p-3"
-                     
-                  >
-                     <rect
-                     viewBox="0 0 512 512"
-                     fill="#3771C8"
+                     viewBox="0 0 24 24"
+                     fill="none"
                      width="55px"
                      height="55px"
                      xmlns="http://www.w3.org/2000/svg"
                      stroke="##3771C8"
-                     class="ionicon"
-                     />
-                   
-                     <rect
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        stroke="#3771C8"
-                        stroke-linejoin="round"
-                        stroke-width="32"
-                        x="48"
-                        y="80"
-                        width="416"
-                        height="384"
-                        rx="48"
-                     />
-                     <path
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        stroke="#3771C8"
-                        stroke-linejoin="round"
-                        stroke-width="32"
+                     class="rounded-full bg-secondary/50 p-3"
+                  >
+                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                     <g
+                        id="SVGRepo_tracerCarrier"
                         stroke-linecap="round"
-                        d="M128 48v32M384 48v32M464 160H48"
-                     />
+                        stroke-linejoin="round"
+                     ></g>
+                     <g id="SVGRepo_iconCarrier">
+                        <path
+                           d="M2 8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5H7"
+                           stroke="#3771C8"
+                           stroke-width="1.5"
+                           stroke-miterlimit="10"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        ></path>
+                        <path
+                           d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9"
+                           stroke="#3771C8"
+                           stroke-width="1.5"
+                           stroke-miterlimit="10"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        ></path>
+                        <path
+                           d="M2 16.5H8"
+                           stroke="#3771C8"
+                           stroke-width="1.5"
+                           stroke-miterlimit="10"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        ></path>
+                        <path
+                           d="M2 12.5H5"
+                           stroke="#3771C8"
+                           stroke-width="1.5"
+                           stroke-miterlimit="10"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        ></path>
+                     </g>
                   </svg>
                </div>
                <h2 class="card-title mt-5 justify-center text-center">

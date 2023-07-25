@@ -49,7 +49,7 @@
          >
             <div class="flex justify-center">
                <img
-                  src="/images/scalable.png"
+                  src="/images/settings.png"
                   alt=""
                   class="w-[25%] xl:w-[70%]"
                />
@@ -57,10 +57,9 @@
             <div class="flex flex-col items-center gap-4 xl:items-start">
                <h1 class="text-2xl font-semibold text-primary">Support</h1>
                <p class="text-justify text-default">
-                  At Eulap, we believe in putting our customers first. Our team
-                  provides top-notch customer support, assisting you at every
-                  step of your journey. We are here to answer your questions and
-                  resolve any concerns promptly.
+                  At Eulap, prioritizing customers is our core belief. Our team
+                  offers exceptional support, guiding your journey with
+                  responsiveness and care.
                </p>
             </div>
          </div>
