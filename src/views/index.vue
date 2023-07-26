@@ -9,6 +9,7 @@
          >
             <div class="w-full md:w-[75%]">
                <h1
+                  ref="tagline"
                   class="text-center text-[1.5rem] font-semibold text-default xl:text-start xl:text-[2.5vw]"
                >
                   Transform your business communication and soar to new heights
@@ -18,7 +19,7 @@
             <button
                class="mt-5 flex cursor-pointer items-center rounded-md border border-primary px-4 py-[.60rem] text-[1rem] font-semibold text-primary transition duration-200 ease-in-out hover:bg-primary hover:bg-primary/80 xl:hidden"
             >
-               <a href="sms.eulap.com">Get Started</a> 
+               <a href="https://smsportal.eulap.com/login">Get Started</a>
             </button>
          </div>
          <div class="center w-full xl:w-[50%]">
@@ -52,19 +53,23 @@
       <FAQsView />
       <footerView />
       <backtotopView id="scrolltotop" class="hidden" @click="backtotop" />
+      <chatpluginView />
    </div>
 </template>
 
 <script>
-import headerView from "../../src/components/header.vue"
-import aboutView from "../../src/components/about.vue"
-import servicesView from "../../src/components/services.vue"
-import chooseView from "../../src/components/choose.vue"
-import FAQsView from "../../src/components/FAQs.vue"
-import worksView from "../../src/components/works.vue"
-import footerView from "../../src/components/footer.vue"
-import backtotopView from "../../src/components/backtotop.vue"
-import { ref } from "vue"
+import headerView from '../../src/components/header.vue'
+import aboutView from '../../src/components/about.vue'
+import servicesView from '../../src/components/services.vue'
+import chooseView from '../../src/components/choose.vue'
+import FAQsView from '../../src/components/FAQs.vue'
+import worksView from '../../src/components/works.vue'
+import footerView from '../../src/components/footer.vue'
+import backtotopView from '../../src/components/backtotop.vue'
+import { gsap } from 'gsap'
+import { ref } from 'vue'
+import chatpluginView from '../../src/components/chatplugin.vue'
+
 export default {
    components: {
       headerView,
@@ -75,14 +80,17 @@ export default {
       worksView,
       FAQsView,
       backtotopView,
+      chatpluginView,
    },
    setup() {
+      const tagline = ref(null)
       const backtotop = () => {
          window.scrollTo(0, 0)
       }
 
       return {
          backtotop,
+         tagline,
       }
    },
    data() {
@@ -94,15 +102,33 @@ export default {
             var scroll = this.scrollY
 
             if (scroll > 500) {
-               document.getElementById("scrolltotop").classList.remove("hidden")
+               document.getElementById('scrolltotop').classList.remove('hidden')
             } else {
-               document.getElementById("scrolltotop").classList.add("hidden")
+               document.getElementById('scrolltotop').classList.add('hidden')
             }
          }
+      },
+
+      // animation
+      taglineAniamtion() {
+         gsap.from(this.tagline, {
+            delay: 0.5,
+            duration: 1,
+            x: '-100',
+            autoAlpha: 0,
+            ease: 'back.out(1.5)',
+         })
       },
    },
    mounted() {
       this.scrollTop()
+
+      let array = [1, 2, 3, 4, 5, 6]
+      console.log(gsap.utils.random(0, 100, 5))
+      console.log(gsap.utils.shuffle(array), array[1])
+
+      // animation
+      this.taglineAniamtion()
    },
 }
 </script>

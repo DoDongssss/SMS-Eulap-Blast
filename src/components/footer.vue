@@ -7,7 +7,7 @@
             <div
                class="flex h-full w-full flex-wrap items-center justify-between gap-12"
             >
-               <div class="flex flex-wrap gap-6">
+               <div class="flex flex-wrap gap-3 xl:gap-6">
                   <div class="flex flex-col gap-3">
                      <p class="flex items-center gap-2 text-default">
                         <span class="rounded-full bg-secondary/50">
@@ -175,12 +175,22 @@
             class="flex w-full flex-col items-center justify-center border-t border-default/20 py-8"
          >
             <div>
-               <span class="cursor-pointer text-[1rem] font-bold text-primary"
+               <span
+                  class="cursor-pointer text-[1rem] font-bold text-primary"
+                  onclick="my_modal_4.showModal()"
                   >Privacy Policy</span
                >
+               <dialog id="my_modal_4" class="modal">
+                  <form method="dialog" class="modal-box w-11/12 max-w-3xl">
+                     <privacypolicyView />
+                     <div class="modal-action">
+                        <button class="btn">Close</button>
+                     </div>
+                  </form>
+               </dialog>
             </div>
             <p class="mt-1 text-center text-default">
-               eulap Software Solution © 2023 - All right reserved
+               Eulap Software Solution © 2023 - All right reserved
             </p>
          </div>
       </footer>
@@ -188,7 +198,11 @@
 </template>
 
 <script>
+import privacypolicyView from "../components/privacypolicy.vue"
 export default {
+   components: {
+      privacypolicyView,
+   },
    setup() {
       return {}
    },

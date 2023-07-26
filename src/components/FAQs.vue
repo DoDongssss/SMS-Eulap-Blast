@@ -1,26 +1,26 @@
 <template>
    <div
-      class="m-h-screen flex flex-col items-center justify-center gap-6 px-6 py-12 text-default xl:p-12"
+      class="m-h-screen mt-12 flex flex-col items-center justify-center px-6 py-12 text-default xl:p-12"
    >
       <h1 class="text-4xl font-[900] xl:text-5xl">FAQs</h1>
       <div
-         class="mt-3 flex flex-wrap items-start justify-center gap-6 xl:mt-[5rem]"
+         class="mt-3 flex flex-wrap items-start justify-center gap-6 xl:mt-[70px]"
       >
          <div class="join join-vertical w-full xl:w-[550px]">
             <div
-               class="collapse-arrow collapse join-item border border-base-300"
+               class="collapse join-item collapse-arrow border border-base-300"
             >
                <input type="radio" name="my-accordion-1" />
                <div
                   class="collapse-title text-[.9rem] font-semibold xl:text-[1.11rem]"
                >
-                  What is an SMS Blast?
+                  What is an SMS?
                </div>
                <div class="collapse-content">
                   <p>
-                     The SMS Blast System is a powerful communication tool that
-                     allows businesses and individuals to send a large volume of
-                     SMS messages simultaneously to a targeted audience. It
+                     The SMS System is a powerful communication tool that allows
+                     businesses and individuals to send a large volume of SMS
+                     messages simultaneously to a targeted audience. It
                      streamlines the process of reaching multiple recipients
                      with personalized messages efficiently and instantly.
                   </p>
@@ -33,17 +33,17 @@
                <div
                   class="collapse-title text-[.9rem] font-semibold xl:text-[1.11rem]"
                >
-                  How does an SMS Blast System Work?
+                  How does an SMS System Work?
                </div>
                <div class="collapse-content">
                   <p>
-                     The SMS Blast System typically operates through an online
+                     The SMS System typically operates through an online
                      platform or software. Users can upload their contact lists
                      or segment their audience based on specific criteria. They
                      then compose a customized SMS message, which can include
-                     their brand or company name. After scheduling the blast at
-                     the desired time or using automation, the system sends out
-                     the messages to all recipients simultaneously.
+                     their brand or company name. After scheduling the at the
+                     desired time or using automation, the system sends out the
+                     messages to all recipients simultaneously.
                   </p>
                </div>
             </div>
@@ -54,7 +54,7 @@
                <div
                   class="collapse-title text-[.9rem] font-semibold xl:text-[1.11rem]"
                >
-                  What are the benefits of using an SMS Blast System?
+                  What are the benefits of using an SMS System?
                </div>
                <div class="collapse-content">
                   <ul class="list-disc px-4">
@@ -92,16 +92,16 @@
                <div
                   class="collapse-title text-[.9rem] font-semibold xl:text-[1.11rem]"
                >
-                  Is an SMS Blast System suitable for my business?
+                  Is an SMS System suitable for my business?
                </div>
                <div class="collapse-content">
                   <p>
-                     Yes, an SMS Blast System is beneficial for various
-                     businesses and industries, including retail, hospitality,
-                     e-commerce, event management, and more. It is particularly
-                     effective for businesses aiming to promote offers, launch
-                     marketing campaigns, send event reminders, and engage
-                     customers with time-sensitive information.
+                     Yes, an SMS System is beneficial for various businesses and
+                     industries, including retail, hospitality, e-commerce,
+                     event management, and more. It is particularly effective
+                     for businesses aiming to promote offers, launch marketing
+                     campaigns, send event reminders, and engage customers with
+                     time-sensitive information.
                   </p>
                </div>
             </div>
@@ -112,11 +112,11 @@
                <div
                   class="collapse-title text-[.9rem] font-semibold xl:text-[1.11rem]"
                >
-                  How secure is the SMS Blast System with customer data?
+                  How secure is the SMS System with customer data?
                </div>
                <div class="collapse-content">
                   <p>
-                     As providers prioritize data security, reputable SMS Blast
+                     As providers prioritize data security, reputable SMS
                      Systems ensure that customer data is protected and comply
                      with relevant data protection regulations. It is essential
                      to choose a trusted platform that employs encryption and
@@ -133,14 +133,14 @@
             >
                <input type="radio" name="my-accordion-1" />
                <div class="collapse-title text-[1.13rem] font-semibold">
-                  Can I integrate an SMS Blast System with my existing software?
+                  Can I integrate an SMS System with my existing software?
                </div>
                <div class="collapse-content">
                   <p>
-                     Yes, many SMS Blast Systems offer seamless integration
-                     options with existing software and applications, such as
-                     CRM systems or marketing automation tools. This allows for
-                     a smooth workflow and a hassle-free user experience.
+                     Yes, many SMS Systems offer seamless integration options
+                     with existing software and applications, such as CRM
+                     systems or marketing automation tools. This allows for a
+                     smooth workflow and a hassle-free user experience.
                   </p>
                </div>
             </div>
@@ -152,15 +152,15 @@
                   class="collapse-title text-[.9rem] font-semibold xl:text-[1.11rem]"
                >
                   Is there a limit to the number of recipients I can reach with
-                  an SMS Blast?
+                  an SMS?
                </div>
                <div class="collapse-content">
                   <p>
-                     The SMS Blast System's scalability allows businesses to
-                     send messages to a large number of recipients,
-                     accommodating both small and large customer bases. The
-                     specific limitations may vary depending on the chosen
-                     service provider or subscription plan.
+                     The SMS System's scalability allows businesses to send
+                     messages to a large number of recipients, accommodating
+                     both small and large customer bases. The specific
+                     limitations may vary depending on the chosen service
+                     provider or subscription plan.
                   </p>
                </div>
             </div>
@@ -171,14 +171,14 @@
                <div
                   class="collapse-title text-[.9rem] font-semibold xl:text-[1.11rem]"
                >
-                  Can I track the performance of my SMS Blast campaigns?
+                  Can I track the performance of my SMS campaigns?
                </div>
                <div class="collapse-content">
                   <p>
-                     Yes, most SMS Blast Systems provide comprehensive analytics
-                     and reporting features. Users can track delivery rates,
-                     open rates, and click-through rates, allowing them to
-                     measure the success of their campaigns and make data-driven
+                     Yes, most SMS Systems provide comprehensive analytics and
+                     reporting features. Users can track delivery rates, open
+                     rates, and click-through rates, allowing them to measure
+                     the success of their campaigns and make data-driven
                      decisions for future improvements.
                   </p>
                </div>
@@ -190,16 +190,15 @@
                <div
                   class="collapse-title text-[.9rem] font-semibold xl:text-[1.11rem]"
                >
-                  Is there customer support available for users of the SMS Blast
+                  Is there customer support available for users of the SMS
                   System?
                </div>
                <div class="collapse-content">
                   <p>
-                     Reputable SMS Blast System providers typically offer
-                     customer support through various channels, such as email,
-                     chat, or phone. Users can seek assistance with any queries
-                     or technical issues they encounter while using the
-                     platform.
+                     Reputable SMS System providers typically offer customer
+                     support through various channels, such as email, chat, or
+                     phone. Users can seek assistance with any queries or
+                     technical issues they encounter while using the platform.
                   </p>
                </div>
             </div>
@@ -210,7 +209,7 @@
                <div
                   class="collapse-title text-[.9rem] font-semibold xl:text-[1.11rem]"
                >
-                  What are the best practices for running successful SMS Blast
+                  What are the best practices for running successful SMS
                   campaigns?
                </div>
                <div class="collapse-content">

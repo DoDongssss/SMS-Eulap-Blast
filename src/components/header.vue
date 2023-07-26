@@ -1,6 +1,6 @@
 <template>
    <div
-      class="sticky top-0 z-50 flex h-[80px] items-center justify-between bg-default bg-theme px-6 drop-shadow-xl xl:px-12"
+      class="sticky top-0 z-50 flex h-[80px] items-center justify-between bg-theme px-6 drop-shadow-xl xl:px-12"
    >
       <div class="navbar-start w-auto md:hidden">
          <div class="dropdown">
@@ -81,7 +81,7 @@
          <button
             class="hidden cursor-pointer items-center rounded-md bg-primary/80 px-4 py-[.60rem] text-[1rem] text-white transition duration-200 ease-in-out hover:bg-primary xl:flex"
          >
-            <a href="sms.eulap.com">Get started</a>
+            <a href="https://smsportal.eulap.com/login">Get started</a>
          </button>
          <label class="swap swap-rotate">
             <!-- this hidden checkbox controls the state -->

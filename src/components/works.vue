@@ -1,14 +1,15 @@
 <template>
    <div
-      class="m-h-screen flex w-full flex-col items-center justify-center px-6 py-12 text-default xl:p-12" id="work"
+      class="m-h-screen mt-12 flex w-full flex-col items-center justify-center px-6 py-12 text-default xl:p-12"
+      id="work"
    >
       <h1 class="text-3xl font-[900] text-default xl:text-4xl">
          How it works?
       </h1>
       <div
-         class="mt-[3rem] flex flex-col items-center justify-center gap-12 xl:mt-[6rem]"
+         class="mt-[3rem] flex flex-col items-center justify-center gap-12 xl:mt-[70px]"
       >
-         <div class="flex flex-wrap items-center justify-center gap-12">
+         <div class="flex flex-wrap items-start justify-center gap-12">
             <div class="flex w-[350px] flex-col items-center justify-start">
                <img
                   src="/images/signup.png"
@@ -110,9 +111,9 @@
 <script>
 export default {
    setup() {
-      return {};
+      return {}
    },
-};
+}
 </script>
 
 <style scoped>
