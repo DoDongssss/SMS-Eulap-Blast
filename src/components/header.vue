@@ -48,7 +48,7 @@
          </div>
       </div>
       <a href="#"
-         ><img src="/images/logo.png" alt="" class="w-[80px] py-4"
+         ><img src="/images/logo.png" alt="" class="w-[110px] py-4"
       /></a>
       <div class="hidden md:block">
          <div class="flex gap-7">
@@ -80,7 +80,7 @@
          >
             <a href="https://smsportal.eulap.com/login">Get started</a>
          </button>
-         <label class="swap swap-rotate">
+         <label class="swap-rotate swap">
             <!-- this hidden checkbox controls the state -->
             <input type="checkbox" @change="changeTheme" />
 

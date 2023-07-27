@@ -21,7 +21,7 @@
                </div>
                <div class="collapse-content">
                   <p>
-                     The SMS System is a powerful communication tool that allows
+                     The SMS system is a powerful communication tool that allows
                      businesses and individuals to send a large volume of SMS
                      messages simultaneously to a targeted audience. It
                      streamlines the process of reaching multiple recipients

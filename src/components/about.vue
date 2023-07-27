@@ -24,10 +24,10 @@
             data-aos="zoom-in-up"
             class="mt-8 text-justify text-[17px] leading-loose text-default"
          >
-            Introducing Eulap SMS - a revolutionary communication solution
-            revolutionizing businesses' marketing endeavors. Its user-friendly
+            Introducing Eulap SMS - a revolutionary communication solution that
+            is transforming businesses' marketing endeavors. Its user-friendly
             interface and advanced features make customer engagement effortless,
-            taking marketing efforts to unprecedented levels. By enabling
+            elevating marketing efforts to unparalleled levels. By enabling
             personalized messages with brand identity, businesses can easily
             reach and engage their audience, all starting with a simple account
             signup process.
