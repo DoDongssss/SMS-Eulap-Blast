@@ -12,8 +12,8 @@
                   ref="tagline"
                   class="text-center text-[1.5rem] font-semibold text-default xl:text-start xl:text-[2.5vw]"
                >
-                  Transform your business communication and soar to new heights
-                  of success.
+                  Transform your business communication and ascend to
+                  unparalleled heights of success.
                </h1>
             </div>
             <button

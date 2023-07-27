@@ -224,12 +224,12 @@
                            <p class="py-4">
                               Personalized messaging refers to the practice of
                               sending individualized and customized SMS messages
-                              to customers, with the inclusion of the
-                              recipient's name or other relevant information,
-                              along with the brand or company name. Instead of
-                              sending generic and mass-produced SMS blasts,
-                              personalized messaging aims to establish a more
-                              direct and personal connection with each customer.
+                              to customers, incorporating the recipient's name
+                              or other relevant information along with the brand
+                              or company name. Rather than sending generic and
+                              mass-produced SMS blasts, personalized messaging
+                              aims to establish a more direct and personal
+                              connection with each customer.
                            </p>
                         </form>
                         <form method="dialog" class="modal-backdrop">
@@ -294,17 +294,16 @@
                            </h3> -->
                            <p class="py-4">
                               Targeted campaigns refer to marketing initiatives
-                              that are designed and executed with a focus on
-                              specific groups or segments within a larger
-                              audience. Instead of adopting a one-size-fits-all
-                              approach, targeted campaigns aim to deliver
-                              relevant and personalized messages to particular
-                              subsets of customers who share similar
-                              characteristics, preferences, or behaviors. The
-                              goal is to maximize the impact of the marketing
-                              efforts by tailoring the content to resonate with
-                              the unique needs and interests of each targeted
-                              group.
+                              designed and executed with a focus on specific
+                              groups or segments within a larger audience.
+                              Instead of adopting a one-size-fits-all approach,
+                              targeted campaigns aim to deliver relevant and
+                              personalized messages to particular subsets of
+                              customers who share similar characteristics,
+                              preferences, or behaviors. The goal is to maximize
+                              the impact of the marketing efforts by tailoring
+                              the content to resonate with the unique needs and
+                              interests of each targeted group.
                            </p>
                         </form>
                         <form method="dialog" class="modal-backdrop">
@@ -392,15 +391,14 @@
                               Personalized Messaging
                            </h3> -->
                            <p class="py-4">
-                              Scheduling and automation are essential elements
-                              of modern marketing strategies that allow
-                              businesses to plan, organize, and execute their
-                              campaigns in a more efficient and effective
-                              manner. By leveraging technology and automation
-                              tools, companies can optimize their messaging and
-                              reach their target audience at the most opportune
-                              moments, maximizing the impact of their marketing
-                              efforts.
+                              Scheduling and automation are vital components of
+                              modern marketing strategies, enabling businesses
+                              to plan, organize, and execute campaigns more
+                              efficiently and effectively. By leveraging
+                              technology and automation tools, companies can
+                              optimize their messaging and reach their target
+                              audience at the most opportune moments, maximizing
+                              the impact of their marketing efforts.
                            </p>
                         </form>
                         <form method="dialog" class="modal-backdrop">

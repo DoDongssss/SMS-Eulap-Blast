@@ -44,8 +44,8 @@
                   >
                </h5>
                <p class="mt-5 text-center">
-                  customer contact list or segment your audience for targeted
-                  campaigns.
+                  Create a customer contact list or segment your audience for
+                  targeted campaigns.
                </p>
             </div>
             <div
@@ -63,8 +63,8 @@
                   >
                </h5>
                <p class="mt-5 text-center">
-                  Craft Upload your personalized SMS messages with your brand
-                  name or company identity.
+                  Craft and upload your personalized SMS messages with your
+                  brand name or company identity.
                </p>
             </div>
          </div>
@@ -101,8 +101,8 @@
                   <span class="font-semibold text-primary">Blast Away</span>
                </h5>
                <p class="mt-5 text-center">
-                  Launch your SMS blast and watch your messages reach and engage
-                  your audience instantly.
+                  Launch your SMS blast and watch your messages instantly reach
+                  and engage your audience.
                </p>
             </div>
             <div

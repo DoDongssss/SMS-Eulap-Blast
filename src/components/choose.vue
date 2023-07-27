@@ -24,9 +24,10 @@
                <h1 class="text-center text-2xl font-semibold text-primary">
                   Seamless Integration
                </h1>
-               <p class="text-justify text-default">
-                  Easily integrate our SMS solution with your existing systems
-                  and applications for a hassle-free experience.
+               <p class="text-default">
+                  Effortlessly integrate our SMS solution with your current
+                  systems and applications, ensuring a seamless and hassle-free
+                  experience.
                </p>
             </div>
          </div>
@@ -43,9 +44,10 @@
             </div>
             <div class="flex flex-col items-center gap-4 xl:items-start">
                <h1 class="text-2xl font-semibold text-primary">Scalability</h1>
-               <p class="text-justify text-default">
+               <p class="text-default">
                   Whether you have a small customer base or millions of
-                  recipients, our platform scales to meet your requirements.
+                  recipients, our platform can scale to accommodate all your
+                  needs.
                </p>
             </div>
          </div>
@@ -62,10 +64,10 @@
             </div>
             <div class="flex flex-col items-center gap-4 xl:items-start">
                <h1 class="text-2xl font-semibold text-primary">Support</h1>
-               <p class="text-justify text-default">
-                  At Eulap, prioritizing customers is our core belief. Our team
-                  offers exceptional support, guiding your journey with
-                  responsiveness and care.
+               <p class="text-default">
+                  At Eulap, prioritizing customers is at the heart of our
+                  beliefs. Our team provides exceptional support, guiding your
+                  journey with utmost responsiveness and care.
                </p>
             </div>
          </div>
