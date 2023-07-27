@@ -1,12 +1,16 @@
 <template>
    <div class="mt-[50px] flex flex-col items-center justify-center p-6 xl:p-12">
-      <h1 class="text-center text-2xl font-[900] text-default xl:text-4xl">
+      <h1
+         data-aos="zoom-in"
+         class="text-center text-2xl font-[900] text-default xl:text-4xl"
+      >
          Why Choose Eulap SMS?
       </h1>
       <div
          class="mt-[3rem] flex flex-wrap items-start justify-center gap-6 xl:mt-[5rem] xl:items-center xl:gap-12"
       >
          <div
+            data-aos="fade-right"
             class="c-box-shadow flex w-full flex-col items-center justify-center gap-6 rounded-xl bg-theme p-6 px-10 py-5 xl:w-[550px] xl:flex-row"
          >
             <div class="flex justify-center">
@@ -27,6 +31,7 @@
             </div>
          </div>
          <div
+            data-aos="fade-left"
             class="c-box-shadow flex w-full flex-col items-center justify-center gap-6 rounded-xl bg-theme p-6 px-10 py-5 xl:w-[550px] xl:flex-row"
          >
             <div class="flex justify-center">
@@ -45,6 +50,7 @@
             </div>
          </div>
          <div
+            data-aos="fade-up"
             class="c-box-shadow flex w-full flex-col items-center justify-center gap-6 rounded-xl bg-theme p-6 px-10 py-5 xl:w-[550px] xl:flex-row"
          >
             <div class="flex justify-center">
@@ -68,10 +74,14 @@
 </template>
 
 <script>
+import { ref } from 'vue'
+
 export default {
    setup() {
       return {}
    },
+   methods: {},
+   mounted() {},
 }
 </script>
 

@@ -30,19 +30,27 @@
                   class="flex w-full items-center justify-center gap-2 xl:mt-12"
                >
                   <span
-                     class="left-[80px] flex skew-x-[-15deg] rounded-md bg-primary/95 px-4 py-2 text-[8px] text-white xl:absolute xl:text-[1vw]"
+                     ref="cardOne"
+                     class="left-[80px] z-10 flex skew-x-[-15deg] rounded-md bg-primary/95 px-4 py-2 text-[8px] text-white xl:absolute xl:text-[1vw]"
                      >Quick Send
                   </span>
                   <span
-                     class="left-[80px] skew-x-[-15deg] rounded-md bg-primary/95 px-4 py-2 text-[8px] text-white xl:absolute xl:mt-[80px] xl:text-[1vw]"
+                     ref="cardTwo"
+                     class="left-[80px] z-10 skew-x-[-15deg] rounded-md bg-primary/95 px-4 py-2 text-[8px] text-white xl:absolute xl:mt-[80px] xl:text-[1vw]"
                      >Send Using File</span
                   >
                   <span
-                     class="left-[80px] skew-x-[-15deg] rounded-md bg-primary/95 px-4 py-2 text-[8px] text-white shadow-lg xl:absolute xl:mt-[160px] xl:text-[1vw]"
+                     ref="cardThree"
+                     class="left-[80px] z-10 skew-x-[-15deg] rounded-md bg-primary/95 px-4 py-2 text-[8px] text-white shadow-lg xl:absolute xl:mt-[160px] xl:text-[1vw]"
                      >Campaign Builder</span
                   >
                </div>
-               <img src="/images/indexVector.png" alt="" class="w-full" />
+               <img
+                  ref="bgIndex"
+                  src="/images/indexVector.png"
+                  alt=""
+                  class="w-full"
+               />
             </div>
          </div>
       </div>
@@ -53,7 +61,7 @@
       <FAQsView />
       <footerView />
       <backtotopView id="scrolltotop" class="hidden" @click="backtotop" />
-      <chatpluginView />
+      <!-- <chatpluginView /> -->
    </div>
 </template>
 
@@ -68,7 +76,7 @@ import footerView from '../../src/components/footer.vue'
 import backtotopView from '../../src/components/backtotop.vue'
 import { gsap } from 'gsap'
 import { ref } from 'vue'
-import chatpluginView from '../../src/components/chatplugin.vue'
+// import chatpluginView from '../../src/components/chatplugin.vue'
 
 export default {
    components: {
@@ -80,10 +88,14 @@ export default {
       worksView,
       FAQsView,
       backtotopView,
-      chatpluginView,
+      // chatpluginView,
    },
    setup() {
       const tagline = ref(null)
+      const bgIndex = ref(null)
+      const cardOne = ref(null)
+      const cardTwo = ref(null)
+      const cardThree = ref(null)
       const backtotop = () => {
          window.scrollTo(0, 0)
       }
@@ -91,6 +103,10 @@ export default {
       return {
          backtotop,
          tagline,
+         bgIndex,
+         cardOne,
+         cardTwo,
+         cardThree,
       }
    },
    data() {
@@ -119,16 +135,23 @@ export default {
             ease: 'back.out(1.5)',
          })
       },
+      vectorAnimation() {
+         const trans = gsap.timeline({ delay: 0.5, paused: true })
+         trans.from(this.bgIndex, { x: '+200', autoAlpha: 0, duration: 0.5 })
+         trans.from(this.cardOne, { x: '-200', autoAlpha: 0, duration: 0.25 })
+         trans.from(this.cardTwo, { x: '-200', autoAlpha: 0, duration: 0.25 })
+         trans.from(this.cardThree, { x: '-200', autoAlpha: 0, duration: 0.25 })
+         trans.play()
+      },
    },
    mounted() {
       this.scrollTop()
 
-      let array = [1, 2, 3, 4, 5, 6]
-      console.log(gsap.utils.random(0, 100, 5))
-      console.log(gsap.utils.shuffle(array), array[1])
-
       // animation
+      //for smooth scroll effect
+
       this.taglineAniamtion()
+      this.vectorAnimation()
    },
 }
 </script>

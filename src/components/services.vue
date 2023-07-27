@@ -3,32 +3,151 @@
       class="mt-12 flex w-full flex-col items-center justify-center p-6 xl:p-12"
       id="features"
    >
-      <h1 class="text-3xl font-[900] text-default">Features</h1>
-      <div class="mt-[70px] flex flex-col">
-         <div class="flex h-[550px]">
-            <div class="flex flex-1 items-center justify-center">
-               <img src="/images/indexVector.png" alt="" />
+      <h1 class="text-3xl font-[900] text-default" data-aos="zoom-in">
+         Features
+      </h1>
+      <div class="mt-[3rem] flex flex-col">
+         <div class="flex flex-col items-center gap-6 xl:flex-row">
+            <div
+               data-aos="fade-right"
+               class="flex flex-1 items-center justify-center xl:justify-end"
+            >
+               <img
+                  src="/images/phone.png"
+                  alt=""
+                  class="w-[80%] rounded-md bg-secondary/80"
+               />
             </div>
             <div class="flex flex-1 flex-col items-start justify-center px-6">
-               <h1 class="text-2xl font-[900] text-primary">Key features:</h1>
-               <p
-                  class="mt-8 text-justify text-[17px] leading-loose text-default"
+               <h1 data-aos="fade-left" class="text-xl font-[900] text-primary">
+                  Key features:
+               </h1>
+               <ul
+                  class="ml-2 mt-5 flex flex-col gap-4 text-[16px] text-default"
                >
-                  Eulap SMS is a premier messaging service, standing out with
-                  its key feature of prominently highlighting the sender's
-                  identity in every text. It ensures trustworthy communication,
-                  offers advanced filtering, and allows for specific group
-                  creation, making it ideal for disseminating announcements,
-                  billing due dates, and important updates. Eulap SMS: your
-                  go-to platform for seamless communication.
-               </p>
+                  <li data-aos="fade-left" class="flex gap-2">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="ionicon"
+                        viewBox="0 0 512 512"
+                        height="35px"
+                        width="35px"
+                     >
+                        <path
+                           fill="none"
+                           stroke="green"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           stroke-width="32"
+                           d="M464 128L240 384l-96-96M144 384l-96-96M368 128L232 284"
+                        />
+                     </svg>
+                     <span>Sender Identity Emphasis</span>
+                  </li>
+                  <li data-aos="fade-left" class="flex gap-2">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="ionicon"
+                        viewBox="0 0 512 512"
+                        height="35px"
+                        width="35px"
+                     >
+                        <path
+                           fill="none"
+                           stroke="green"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           stroke-width="32"
+                           d="M464 128L240 384l-96-96M144 384l-96-96M368 128L232 284"
+                        />
+                     </svg>
+                     <span>Ensures trustworthy communication</span>
+                  </li>
+                  <li data-aos="fade-left" class="flex gap-2">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="ionicon"
+                        viewBox="0 0 512 512"
+                        height="35px"
+                        width="35px"
+                     >
+                        <path
+                           fill="none"
+                           stroke="green"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           stroke-width="32"
+                           d="M464 128L240 384l-96-96M144 384l-96-96M368 128L232 284"
+                        />
+                     </svg>
+                     <span>Advanced Filtering Options</span>
+                  </li>
+                  <li data-aos="fade-left" class="flex gap-2">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="ionicon"
+                        viewBox="0 0 512 512"
+                        height="35px"
+                        width="35px"
+                     >
+                        <path
+                           fill="none"
+                           stroke="green"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           stroke-width="32"
+                           d="M464 128L240 384l-96-96M144 384l-96-96M368 128L232 284"
+                        />
+                     </svg>
+                     <span>Allow Custom Group Creation</span>
+                  </li>
+                  <li data-aos="fade-left" class="flex gap-2">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="ionicon"
+                        viewBox="0 0 512 512"
+                        height="35px"
+                        width="35px"
+                     >
+                        <path
+                           fill="none"
+                           stroke="green"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           stroke-width="32"
+                           d="M464 128L240 384l-96-96M144 384l-96-96M368 128L232 284"
+                        />
+                     </svg>
+                     <span>Announcement Dissemination Platform</span>
+                  </li>
+                  <li data-aos="fade-left" class="flex gap-2">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="ionicon"
+                        viewBox="0 0 512 512"
+                        height="35px"
+                        width="35px"
+                     >
+                        <path
+                           fill="none"
+                           stroke="green"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           stroke-width="32"
+                           d="M464 128L240 384l-96-96M144 384l-96-96M368 128L232 284"
+                        />
+                     </svg>
+                     <span>Payment Deadlines, Vital Notices</span>
+                  </li>
+               </ul>
             </div>
          </div>
          <div
-            class="mt-[1rem] flex w-full flex-wrap items-start justify-center gap-12"
+            class="mt-[6rem] flex w-full flex-wrap items-start justify-center gap-12"
          >
             <div
-               class="card w-96 bg-secondary/50 text-default shadow-xl xl:mt-[100px] xl:h-[360px]"
+               data-aos="fade-up"
+               class="w-full] card bg-secondary/50 text-default shadow-xl md:w-96 xl:mt-[100px] xl:h-[360px]"
             >
                <div class="card-body p-6">
                   <div class="flex justify-center">
@@ -92,16 +211,38 @@
                   </p>
                   <div class="card-actions mt-6 justify-center">
                      <button
+                        onclick="personalize.showModal()"
                         class="flex cursor-pointer items-center rounded-md border border-primary bg-transparent px-4 py-[.60rem] text-[1rem] text-primary transition duration-200 ease-in-out hover:bg-primary hover:text-white"
                      >
                         Learn More
                      </button>
+                     <dialog id="personalize" class="modal">
+                        <form method="dialog" class="modal-box">
+                           <!-- <h3 class="text-lg font-bold">
+                              Personalized Messaging
+                           </h3> -->
+                           <p class="py-4">
+                              Personalized messaging refers to the practice of
+                              sending individualized and customized SMS messages
+                              to customers, with the inclusion of the
+                              recipient's name or other relevant information,
+                              along with the brand or company name. Instead of
+                              sending generic and mass-produced SMS blasts,
+                              personalized messaging aims to establish a more
+                              direct and personal connection with each customer.
+                           </p>
+                        </form>
+                        <form method="dialog" class="modal-backdrop">
+                           <button>close</button>
+                        </form>
+                     </dialog>
                   </div>
                </div>
             </div>
 
             <div
-               class="card w-96 bg-secondary/50 text-default shadow-xl xl:h-[360px]"
+               data-aos="fade-up"
+               class="card w-full bg-secondary/50 text-default shadow-xl md:w-96 xl:h-[360px]"
             >
                <div class="card-body">
                   <div class="flex justify-center">
@@ -141,16 +282,42 @@
                   </p>
                   <div class="card-actions mt-6 justify-center">
                      <button
+                        onclick="target.showModal()"
                         class="flex cursor-pointer items-center rounded-md border border-primary bg-transparent px-4 py-[.60rem] text-[1rem] text-primary transition duration-200 ease-in-out hover:bg-primary hover:text-white"
                      >
                         Learn More
                      </button>
+                     <dialog id="target" class="modal">
+                        <form method="dialog" class="modal-box">
+                           <!-- <h3 class="text-lg font-bold">
+                              Personalized Messaging
+                           </h3> -->
+                           <p class="py-4">
+                              Targeted campaigns refer to marketing initiatives
+                              that are designed and executed with a focus on
+                              specific groups or segments within a larger
+                              audience. Instead of adopting a one-size-fits-all
+                              approach, targeted campaigns aim to deliver
+                              relevant and personalized messages to particular
+                              subsets of customers who share similar
+                              characteristics, preferences, or behaviors. The
+                              goal is to maximize the impact of the marketing
+                              efforts by tailoring the content to resonate with
+                              the unique needs and interests of each targeted
+                              group.
+                           </p>
+                        </form>
+                        <form method="dialog" class="modal-backdrop">
+                           <button>close</button>
+                        </form>
+                     </dialog>
                   </div>
                </div>
             </div>
 
             <div
-               class="card w-96 bg-secondary/50 text-default shadow-xl xl:mt-[100px] xl:h-[360px]"
+               data-aos="fade-up"
+               class="card w-full bg-secondary/50 text-default shadow-xl md:w-96 xl:mt-[100px] xl:h-[360px]"
             >
                <div class="card-body">
                   <div class="flex justify-center">
@@ -214,10 +381,32 @@
                   </p>
                   <div class="card-actions mt-6 justify-center">
                      <button
+                        onclick="scheduling.showModal()"
                         class="flex cursor-pointer items-center rounded-md border border-primary bg-transparent px-4 py-[.60rem] text-[1rem] text-primary transition duration-200 ease-in-out hover:bg-primary hover:text-white"
                      >
                         Learn More
                      </button>
+                     <dialog id="scheduling" class="modal">
+                        <form method="dialog" class="modal-box">
+                           <!-- <h3 class="text-lg font-bold">
+                              Personalized Messaging
+                           </h3> -->
+                           <p class="py-4">
+                              Scheduling and automation are essential elements
+                              of modern marketing strategies that allow
+                              businesses to plan, organize, and execute their
+                              campaigns in a more efficient and effective
+                              manner. By leveraging technology and automation
+                              tools, companies can optimize their messaging and
+                              reach their target audience at the most opportune
+                              moments, maximizing the impact of their marketing
+                              efforts.
+                           </p>
+                        </form>
+                        <form method="dialog" class="modal-backdrop">
+                           <button>close</button>
+                        </form>
+                     </dialog>
                   </div>
                </div>
             </div>

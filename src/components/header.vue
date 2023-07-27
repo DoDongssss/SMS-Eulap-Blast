@@ -48,10 +48,7 @@
          </div>
       </div>
       <a href="#"
-         ><img
-            src="/images/logo.png"
-            alt=""
-            class="max-h-[5.5vw] min-h-full py-4"
+         ><img src="/images/logo.png" alt="" class="w-[80px] py-4"
       /></a>
       <div class="hidden md:block">
          <div class="flex gap-7">
@@ -132,31 +129,35 @@
 </template>
 
 <script>
-import { ref } from "vue"
+import { ref } from 'vue'
 
 export default {
    setup() {
       const selectTheme = ref(
-         localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+         localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light'
       )
       document
-         .querySelector("html")
-         .setAttribute("data-theme", selectTheme.value)
+         .querySelector('html')
+         .setAttribute('data-theme', selectTheme.value)
 
       const changeTheme = () => {
-         selectTheme.value == "light"
-            ? (selectTheme.value = "dark")
-            : (selectTheme.value = "light")
-         localStorage.setItem("theme", selectTheme.value)
+         selectTheme.value == 'light'
+            ? (selectTheme.value = 'dark')
+            : (selectTheme.value = 'light')
+         localStorage.setItem('theme', selectTheme.value)
          document
-            .querySelector("html")
-            .setAttribute("data-theme", localStorage.getItem("theme"))
+            .querySelector('html')
+            .setAttribute('data-theme', localStorage.getItem('theme'))
       }
 
       return {
          changeTheme,
          selectTheme,
       }
+   },
+   mounted() {
+      // animation
+      //for smooth scroll effect
    },
 }
 </script>

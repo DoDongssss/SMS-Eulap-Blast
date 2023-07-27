@@ -1,16 +1,22 @@
 <template>
    <div
-      class="m-h-screen mt-12 flex w-full flex-col items-center justify-center px-6 py-12 text-default xl:p-12"
       id="work"
+      class="m-h-screen mt-12 flex w-full flex-col items-center justify-center px-6 py-12 text-default xl:p-12"
    >
-      <h1 class="text-3xl font-[900] text-default xl:text-4xl">
+      <h1
+         data-aos="zoom-in"
+         class="text-3xl font-[900] text-default xl:text-4xl"
+      >
          How it works?
       </h1>
       <div
          class="mt-[3rem] flex flex-col items-center justify-center gap-12 xl:mt-[70px]"
       >
          <div class="flex flex-wrap items-start justify-center gap-12">
-            <div class="flex w-[350px] flex-col items-center justify-start">
+            <div
+               data-aos="fade-right"
+               class="flex w-[350px] flex-col items-center justify-start"
+            >
                <img
                   src="/images/signup.png"
                   alt=""
@@ -23,7 +29,10 @@
                   Create an account with Eulap SMS Blast and get started.
                </p>
             </div>
-            <div class="flex w-[350px] flex-col items-center justify-start">
+            <div
+               data-aos="fade-up"
+               class="flex w-[350px] flex-col items-center justify-start"
+            >
                <img
                   src="/images/network.png"
                   alt=""
@@ -39,7 +48,10 @@
                   campaigns.
                </p>
             </div>
-            <div class="flex w-[350px] flex-col items-center justify-start">
+            <div
+               data-aos="fade-left"
+               class="flex w-[350px] flex-col items-center justify-start"
+            >
                <img
                   src="/images/mail.png"
                   alt=""
@@ -57,7 +69,10 @@
             </div>
          </div>
          <div class="flex flex-wrap items-center justify-center gap-12">
-            <div class="flex w-[350px] flex-col items-center justify-start">
+            <div
+               data-aos="fade-up"
+               class="flex w-[350px] flex-col items-center justify-start"
+            >
                <img
                   src="/images/automation.png"
                   alt=""
@@ -73,7 +88,10 @@
                   time for maximum impact.
                </p>
             </div>
-            <div class="flex w-[350px] flex-col items-center justify-start">
+            <div
+               data-aos="fade-up"
+               class="flex w-[350px] flex-col items-center justify-start"
+            >
                <img
                   src="/images/launch.png"
                   alt=""
@@ -87,7 +105,10 @@
                   your audience instantly.
                </p>
             </div>
-            <div class="flex w-[350px] flex-col items-center justify-start">
+            <div
+               data-aos="fade-up"
+               class="flex w-[350px] flex-col items-center justify-start"
+            >
                <img
                   src="/images/optimization.png"
                   alt=""

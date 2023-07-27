@@ -2,11 +2,14 @@
    <div
       class="m-h-screen mt-12 flex flex-col items-center justify-center px-6 py-12 text-default xl:p-12"
    >
-      <h1 class="text-4xl font-[900] xl:text-5xl">FAQs</h1>
+      <h1 data-aos="zoom-in" class="text-4xl font-[900] xl:text-5xl">FAQs</h1>
       <div
          class="mt-3 flex flex-wrap items-start justify-center gap-6 xl:mt-[70px]"
       >
-         <div class="join join-vertical w-full xl:w-[550px]">
+         <div
+            data-aos="fade-right"
+            class="join join-vertical w-full xl:w-[550px]"
+         >
             <div
                class="collapse join-item collapse-arrow border border-base-300"
             >
@@ -127,7 +130,10 @@
             </div>
          </div>
 
-         <div class="join join-vertical w-full xl:w-[550px]">
+         <div
+            data-aos="fade-left"
+            class="join join-vertical w-full xl:w-[550px]"
+         >
             <div
                class="collapse-arrow collapse join-item border border-base-300"
             >
