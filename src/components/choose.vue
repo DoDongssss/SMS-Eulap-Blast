@@ -44,7 +44,7 @@
             </div>
             <div class="flex flex-col items-center gap-4 xl:items-start">
                <h1 class="text-2xl font-semibold text-primary">Scalability</h1>
-               <p class="text-justify text-default">
+               <p class="text-default">
                   Whether you have a small customer base or millions of
                   recipients, our platform can scale to accommodate all your
                   needs.

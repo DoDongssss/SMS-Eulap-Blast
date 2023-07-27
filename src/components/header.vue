@@ -80,7 +80,7 @@
          >
             <a href="https://smsportal.eulap.com/login">Get started</a>
          </button>
-         <label class="swap-rotate swap">
+         <label class="swap swap-rotate">
             <!-- this hidden checkbox controls the state -->
             <input type="checkbox" @change="changeTheme" />
 
