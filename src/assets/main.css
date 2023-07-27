@@ -33,3 +33,32 @@ html,body{
 .c-box-shadow{
   box-shadow: 0px 1px 8px 0px rgb(66, 66, 66, 0.5);
 }
+
+/* customize scrollbar */
+
+/* Webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 11px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3771C8; /* color of the thumb */
+  border-radius: 6px; /* roundness of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #AFC6E9; /* color of the thumb on hover */
+}
+
+/* ::-webkit-scrollbar-track {
+  background: var(--color-default);
+} */
+
+/* Mozilla Firefox */
+/* Firefox uses a different pseudoelement for scrollbar thumb */
+/* Note that customizing the scrollbar in Firefox only works in older versions (before Firefox 64) */
+* {
+  scrollbar-color: #3771C8 #AFC6E9; /* color of the thumb and track */
+  scrollbar-width: thin; /* width of the scrollbar */
+}
+

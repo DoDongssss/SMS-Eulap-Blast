@@ -4,14 +4,14 @@
    >
       <h1 data-aos="zoom-in" class="text-4xl font-[900] xl:text-5xl">FAQs</h1>
       <div
-         class="mt-3 flex flex-wrap items-start justify-center gap-6 xl:mt-[70px]"
+         class="mt-6 flex flex-wrap items-start justify-center gap-6 xl:mt-[70px]"
       >
          <div
             data-aos="fade-right"
             class="join join-vertical w-full xl:w-[550px]"
          >
             <div
-               class="collapse join-item collapse-arrow border border-base-300"
+               class="collapse-arrow collapse join-item border border-base-300"
             >
                <input type="radio" name="my-accordion-1" />
                <div
@@ -21,7 +21,7 @@
                </div>
                <div class="collapse-content">
                   <p>
-                     The SMS system is a powerful communication tool that allows
+                     The SMS System is a powerful communication tool that allows
                      businesses and individuals to send a large volume of SMS
                      messages simultaneously to a targeted audience. It
                      streamlines the process of reaching multiple recipients
@@ -78,7 +78,7 @@
                         relevant messages to specific groups, maximizing impact.
                      </li>
                      <li>
-                        Efficient Communication: The system allows for quick and
+                        Efficient Communication: The System allows for quick and
                         efficient communication with a large audience.
                      </li>
                      <li>
@@ -115,14 +115,14 @@
                <div
                   class="collapse-title text-[.9rem] font-semibold xl:text-[1.11rem]"
                >
-                  How secure is the SMS System with customer data?
+                  How secure is the SMS system with customer data?
                </div>
                <div class="collapse-content">
                   <p>
-                     As providers prioritize data security, reputable SMS
-                     Systems ensure that customer data is protected and comply
-                     with relevant data protection regulations. It is essential
-                     to choose a trusted platform that employs encryption and
+                     As providers prioritize data security, reputable SMS System
+                     ensure that customer data is protected and comply with
+                     relevant data protection regulations. It is essential to
+                     choose a trusted platform that employs encryption and
                      follows industry best practices to safeguard user
                      information.
                   </p>
@@ -143,10 +143,10 @@
                </div>
                <div class="collapse-content">
                   <p>
-                     Yes, many SMS Systems offer seamless integration options
-                     with existing software and applications, such as CRM
-                     systems or marketing automation tools. This allows for a
-                     smooth workflow and a hassle-free user experience.
+                     Yes, many SMS System offer seamless integration options
+                     with existing software and applications, such as CRM system
+                     or marketing automation tools. This allows for a smooth
+                     workflow and a hassle-free user experience.
                   </p>
                </div>
             </div>
@@ -181,7 +181,7 @@
                </div>
                <div class="collapse-content">
                   <p>
-                     Yes, most SMS Systems provide comprehensive analytics and
+                     Yes, most SMS System provide comprehensive analytics and
                      reporting features. Users can track delivery rates, open
                      rates, and click-through rates, allowing them to measure
                      the success of their campaigns and make data-driven
