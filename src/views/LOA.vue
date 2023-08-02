@@ -45,7 +45,7 @@
             <div class="flex flex-wrap gap-6">
                <div class="flex flex-1 flex-col">
                   <span class="text-[.8rem] font-semibold text-default"
-                     ><span class="mr-1 text-red-500">*</span>date</span
+                     ><span class="mr-1 text-red-500">*</span>Date</span
                   >
                   <input
                      v-model="companyData.date"
@@ -79,114 +79,12 @@
                </div>
             </div>
          </div>
-         <div class="mt-5 flex flex-col gap-8">
-            <div class="flex justify-between">
-               <h1 class="text-xl font-semibold">Message</h1>
-               <button
-                  @click="add(1)"
-                  type="button"
-                  class="flex h-[24px] w-[24px] items-center justify-center rounded-md bg-primary/90 p-5 text-xl font-[900] text-white transition-all hover:bg-primary"
-               >
-                  +
-               </button>
-            </div>
-            <div v-for="(data, key) in messageData" class="relative flex gap-2">
-               <div
-                  class="flex flex-1 gap-8 rounded-md border border-default/50 p-6"
-               >
-                  <span
-                     class="absolute left-[-15px] top-[-15px] flex h-8 w-8 items-center justify-center rounded-full bg-green-500 text-center font-bold text-white"
-                     >{{ key + 1 }}</span
-                  >
-                  <div class="flex flex-1 flex-col">
-                     <span class="text-[.8rem] font-semibold text-default"
-                        ><span class="mr-1 text-red-500">*</span>Sender ID</span
-                     >
-                     <input
-                        v-model="data.sender_id"
-                        type="text"
-                        class="mt-2 w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
-                        required
-                     />
-                  </div>
-                  <div class="flex flex-1 flex-col">
-                     <span class="text-[.8rem] font-semibold text-default"
-                        ><span class="mr-1 text-red-500">*</span>Purpose</span
-                     >
-                     <input
-                        v-model="data.purpose"
-                        type="text"
-                        class="mt-2 w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
-                        required
-                     />
-                  </div>
-                  <div class="flex flex-1 flex-col">
-                     <span class="text-[.8rem] font-semibold text-default"
-                        ><span class="mr-1 text-red-500">*</span>Date From</span
-                     >
-                     <input
-                        v-model="data.date_from"
-                        type="text"
-                        class="mt-2 w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
-                        required
-                     />
-                  </div>
-                  <div class="flex flex-1 flex-col">
-                     <span class="text-[.8rem] font-semibold text-default"
-                        ><span class="mr-1 text-red-500">*</span>Date To</span
-                     >
-                     <input
-                        v-model="data.date_to"
-                        type="text"
-                        class="mt-2 w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
-                        required
-                     />
-                  </div>
-               </div>
-               <div
-                  v-if="key != 0"
-                  @click="remove(1, key)"
-                  class="flex h-full cursor-pointer items-center justify-center rounded bg-red-500 px-2 transition-all hover:bg-red-600"
-               >
-                  <svg
-                     xmlns="http://www.w3.org/2000/svg"
-                     class="ionicon text-white"
-                     viewBox="0 0 512 512"
-                     height="24px"
-                     width="24px"
-                  >
-                     <path
-                        d="M112 112l20 320c.95 18.49 14.4 32 32 32h184c17.67 0 30.87-13.51 32-32l20-320"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="40"
-                     />
-                     <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-miterlimit="10"
-                        stroke-width="40"
-                        d="M80 112h352"
-                     />
-                     <path
-                        d="M192 112V72h0a23.93 23.93 0 0124-24h80a23.93 23.93 0 0124 24h0v40M256 176v224M184 176l8 224M328 176l-8 224"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="40"
-                     />
-                  </svg>
-               </div>
-            </div>
-         </div>
+
          <div class="mt-5 flex flex-col gap-8">
             <div class="flex justify-between">
                <h1 class="text-xl font-semibold">Message Template</h1>
                <button
-                  @click="add(2)"
+                  @click="add()"
                   type="button"
                   class="flex h-[24px] w-[24px] items-center justify-center rounded-md bg-primary/90 p-5 text-xl font-[900] text-white transition-all hover:bg-primary"
                >
@@ -228,7 +126,7 @@
                      </div>
                      <div class="flex flex-1 flex-col">
                         <span class="text-[.8rem] font-semibold text-default"
-                           ><span class="mr-1 text-red-500">*</span>Data
+                           ><span class="mr-1 text-red-500">*</span>Date
                            From</span
                         >
                         <input
@@ -268,7 +166,7 @@
                </div>
                <div
                   v-if="key != 0"
-                  @click="remove(2, key)"
+                  @click="remove(key)"
                   class="flex h-full cursor-pointer items-center justify-center rounded bg-red-500 px-2 transition-all hover:bg-red-600"
                >
                   <svg
@@ -326,9 +224,11 @@
 
 <script>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 
 export default {
    setup() {
+      const router = useRouter()
       const companyData = ref({
          name: null,
          city: null,
@@ -337,14 +237,6 @@ export default {
          CEO: null,
          position: null,
       })
-      const messageData = ref([
-         {
-            sender_id: null,
-            purpose: null,
-            date_from: null,
-            date_to: null,
-         },
-      ])
       const messageTemplateData = ref([
          {
             sender_id: null,
@@ -355,45 +247,43 @@ export default {
          },
       ])
 
-      const add = (indicator) => {
-         document.getElementById('LOA_modal').showModal()
-         if (indicator === 1) {
-            messageData.value.push({
-               sender_id: null,
-               purpose: null,
-               date_from: null,
-               date_to: null,
-            })
-         } else if (indicator === 2) {
-            messageTemplateData.value.push({
-               sender_id: null,
-               purpose: null,
-               date_from: null,
-               date_to: null,
-               message: null,
-            })
-         }
+      const add = () => {
+         messageTemplateData.value.push({
+            sender_id: null,
+            purpose: null,
+            date_from: null,
+            date_to: null,
+            message: null,
+         })
       }
-      const remove = (indicator, index) => {
-         console.log('check', indicator, index)
-         if (indicator === 1) {
-            messageData.value.splice(index)
-         } else if (indicator === 2) {
-            messageTemplateData.value.splice(index)
-            console.log(index)
-         }
+
+      const remove = (index) => {
+         messageTemplateData.value.splice(index)
       }
-      const handleGenerate = () => {
-         console.log('success')
+
+      const handleGenerate = async () => {
+         sessionStorage.setItem(
+            'companyData',
+            JSON.stringify(companyData.value)
+         )
+         sessionStorage.setItem(
+            'messageTemplateData',
+            JSON.stringify(messageTemplateData.value)
+         )
+
+         router.push('/loa/print')
       }
       return {
          companyData,
-         messageData,
          messageTemplateData,
          add,
          remove,
          handleGenerate,
       }
+   },
+   mounted() {
+      sessionStorage.removeItem('companyData')
+      sessionStorage.removeItem('messageTemplateData')
    },
 }
 </script>

@@ -3,14 +3,14 @@
       <div class="page">
          <div class="subpage">
             <div class="flex flex-col font-bold">
-               <p>Company name</p>
-               <p>City</p>
-               <p>Province</p>
+               <p>{{ companyData.name }}</p>
+               <p>{{ companyData.city }}</p>
+               <p>{{ companyData.province }}</p>
             </div>
             <h1 class="mt-[1cm] text-center text-[12pt] font-bold">
                Letter of Authorization
             </h1>
-            <p class="mt-[1cm] font-bold">Date</p>
+            <p class="mt-[1cm] font-bold">{{ companyData.date }}</p>
             <p class="mt-[1cm] text-justify">
                This is to confirm that sufficient authority has been given to
                Eulap Software Solutions its affiliates, partners, agents, and
@@ -20,32 +20,30 @@
                Solutions may in its sole discretion opt to impose, to customize
                the number appearing on the SMS recipient’s phone, making it
                appear that the SMS was sent by the SID/s listed below as the
-               masked name/s for Starzel Uni-trade Merchandise Corporation.
+               masked name/s for {{ companyData.name }}.
             </p>
             <p class="mt-6 text-justify">
-               Starzel Uni-trade Merchandise Corporation represents and warrants
-               that the SID/s below and any and all title, rights and interest
-               thereto are owned by Starzel Uni-trade Merchandise Corporation
-               and that no other person or entity has the right to use or cause
-               the distribution thereof as SIDs. Accordingly, Starzel Uni-trade
-               Merchandise Corporation, hereby undertakes that it shall hold
-               Globe Telecom, Inc., its directors, stockholders, officers,
-               employees and agents, free, harmless and indemnified against any
-               and all claims, suits, proceedings, actions, and other demands of
-               third parties claiming title, ownership or any other interest
-               with respect to the use of the SID/s below as Starzel Uni-trade
-               Merchandise Corporation masked name, trade name, trademark,
-               domain name, or any name/designation, forwarded to the
-               recipients.
+               {{ companyData.name }} represents and warrants that the SID/s
+               below and any and all title, rights and interest thereto are
+               owned by {{ companyData.name }} and that no other person or
+               entity has the right to use or cause the distribution thereof as
+               SIDs. Accordingly, {{ companyData.name }}, hereby undertakes that
+               it shall hold Globe Telecom, Inc., its directors, stockholders,
+               officers, employees and agents, free, harmless and indemnified
+               against any and all claims, suits, proceedings, actions, and
+               other demands of third parties claiming title, ownership or any
+               other interest with respect to the use of the SID/s below as
+               {{ companyData.name }} masked name, trade name, trademark, domain
+               name, or any name/designation, forwarded to the recipients.
             </p>
             <p class="mt-6 text-justify">
-               Furthermore, Starzel Uni-trade Merchandise Corporation undertakes
-               that it shall at all times comply with applicable laws, rules and
-               regulations relating to the sending of SMS and the use of a
-               masked name in the sending of SMS. Accordingly, Starzel Uni-trade
-               Merchandise Corporation hereby undertakes to hold Globe Telecom,
-               Inc. free, harmless and indemnified against any and all
-               liabilities with respect to such laws, rules and regulations.
+               Furthermore, {{ companyData.name }} undertakes that it shall at
+               all times comply with applicable laws, rules and regulations
+               relating to the sending of SMS and the use of a masked name in
+               the sending of SMS. Accordingly, {{ companyData.name }} hereby
+               undertakes to hold Globe Telecom, Inc. free, harmless and
+               indemnified against any and all liabilities with respect to such
+               laws, rules and regulations.
             </p>
 
             <!-- table -->
@@ -63,18 +61,12 @@
                         <th>To</th>
                      </tr>
                   </thead>
-                  <tbody>
+                  <tbody v-for="(data, key) in messageTemplateData">
                      <tr>
-                        <td>Data 1</td>
-                        <td>Data 1</td>
-                        <td>Data 1</td>
-                        <td>Data 2</td>
-                     </tr>
-                     <tr>
-                        <td>Data 1</td>
-                        <td>Data 1</td>
-                        <td>Data 1</td>
-                        <td>Data 2</td>
+                        <td>{{ data.sender_id }}</td>
+                        <td>{{ data.purpose }}</td>
+                        <td>{{ data.date_from }}</td>
+                        <td>{{ data.date_to }}</td>
                      </tr>
                   </tbody>
                </table>
@@ -129,9 +121,9 @@
                per SID.
             </h1>
             <p class="mt-[.6cm]">
-               Undersigned representative of Starzel Unitrade Merchandise
-               Corporation warrants that they are duly authorized to sign this
-               Letter of Authorization on its behalf.
+               Undersigned representative of {{ companyData.name }} warrants
+               that they are duly authorized to sign this Letter of
+               Authorization on its behalf.
             </p>
 
             <div class="mt-[1cm] flex flex-row gap-[7.1cm] font-bold">
@@ -142,9 +134,9 @@
                <div
                   class="flex w-[200px] flex-col border-t border-black font-bold"
                >
-                  <h1>Starzlyn J. Gacis</h1>
-                  <h1>Corporate Secretary</h1>
-                  <h1>SUMC</h1>
+                  <h1>{{ companyData.CEO }}</h1>
+                  <h1>{{ companyData.position }}</h1>
+                  <h1>{{ companyData.name }}</h1>
                </div>
                <div
                   class="flex w-[200px] flex-col border-t border-black font-bold"
@@ -165,7 +157,7 @@
                   <thead>
                      <tr>
                         <th rowspan="2">Sender ID</th>
-                        <th rowspan="2">Purpose of SMS Blast</th>
+                        <th rowspan="2">Purpose</th>
                         <th colspan="2">Validity</th>
                         <th rowspan="2">Message</th>
                      </tr>
@@ -174,20 +166,13 @@
                         <th>To</th>
                      </tr>
                   </thead>
-                  <tbody>
+                  <tbody v-for="(data, key) in messageTemplateData">
                      <tr>
-                        <td>Data 1</td>
-                        <td>Data 1</td>
-                        <td>Data 1</td>
-                        <td>Data 2</td>
-                        <td>Data 2</td>
-                     </tr>
-                     <tr>
-                        <td>Data 1</td>
-                        <td>Data 1</td>
-                        <td>Data 1</td>
-                        <td>Data 2</td>
-                        <td>Data 2</td>
+                        <td>{{ data.sender_id }}</td>
+                        <td>{{ data.purpose }}</td>
+                        <td>{{ data.date_from }}</td>
+                        <td>{{ data.date_to }}</td>
+                        <td>{{ data.message }}</td>
                      </tr>
                   </tbody>
                </table>
@@ -198,11 +183,29 @@
 </template>
 
 <script>
+import { ref } from 'vue'
+import { RouterLink, RouterView } from 'vue-router'
 export default {
    setup() {
-      return {}
+      const companyData = ref({})
+      const messageTemplateData = ref({})
+      return { companyData, messageTemplateData }
    },
    mounted() {
+      if (
+         sessionStorage.getItem('companyData') != null ||
+         sessionStorage.getItem('messageTemplateData') != null
+      ) {
+         this.companyData = JSON.parse(sessionStorage.getItem('companyData'))
+         this.messageTemplateData = JSON.parse(
+            sessionStorage.getItem('messageTemplateData')
+         )
+         console.log(this.companyData.name)
+         console.log(this.messageTemplateData[0])
+      } else {
+         this.$router.push('/loa')
+      }
+
       //   window.print()
    },
 }
