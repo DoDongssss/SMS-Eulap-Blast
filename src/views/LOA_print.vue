@@ -184,9 +184,10 @@
 
 <script>
 import { ref } from 'vue'
-import { RouterLink, RouterView } from 'vue-router'
+import { useRouter } from 'vue-router'
 export default {
    setup() {
+      const router = useRouter()
       const companyData = ref({})
       const messageTemplateData = ref({})
       return { companyData, messageTemplateData }
@@ -203,7 +204,7 @@ export default {
          console.log(this.companyData.name)
          console.log(this.messageTemplateData[0])
       } else {
-         this.$router.push('/loa')
+         router.push('/loa')
       }
 
       //   window.print()
