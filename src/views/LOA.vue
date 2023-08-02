@@ -5,7 +5,14 @@
          class="flex flex-col gap-8 rounded-md border border-default px-8 py-10"
          @submit.prevent="handleGenerate"
       >
-         <div class="flex flex-col flex-wrap gap-8">
+         <div class="flex justify-center">
+            <h1
+               class="w-fit border-b border-black text-center text-2xl font-bold"
+            >
+               Letter of Authorization
+            </h1>
+         </div>
+         <div class="mt-6 flex flex-col flex-wrap gap-8">
             <h1 class="text-xl font-semibold">Company Information</h1>
             <div class="mt-2 flex flex-wrap gap-6">
                <div class="flex min-w-[275px] flex-1 flex-col">
