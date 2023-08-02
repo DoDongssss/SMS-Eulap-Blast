@@ -39,7 +39,6 @@
                      v-model="companyData.position"
                      type="text"
                      class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
-                     required
                   />
                </div>
             </div>
