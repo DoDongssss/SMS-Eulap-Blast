@@ -78,7 +78,7 @@
          <button
             class="hidden cursor-pointer items-center rounded-md bg-primary/80 px-4 py-[.60rem] text-[1rem] text-white transition duration-200 ease-in-out hover:bg-primary xl:flex"
          >
-            <a href="https://smsportal.eulap.com/login">Get started</a>
+            <a href="https://smsportal.eulap.com/login">Login</a>
          </button>
          <label class="swap swap-rotate">
             <!-- this hidden checkbox controls the state -->
