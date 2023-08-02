@@ -44,7 +44,7 @@
                </div>
             </div>
             <div class="flex flex-wrap gap-6">
-               <div class="flex min-w-[275px] flex-1 basis-[30%] flex-col">
+               <div class="flex min-w-[275px] flex-1 flex-col">
                   <span class="text-[.8rem] font-semibold text-default"
                      ><span class="mr-1 text-red-500">*</span>Date</span
                   >
@@ -55,7 +55,7 @@
                      required
                   />
                </div>
-               <div class="flex min-w-[275px] flex-1 basis-[70%] flex-col">
+               <div class="flex min-w-[275px] flex-1 flex-col">
                   <span class="text-[.8rem] font-semibold text-default"
                      ><span class="mr-1 text-red-500">*</span>Address</span
                   >
@@ -280,6 +280,10 @@ export default {
       }
 
       const handleGenerate = async () => {
+         // remove first before inserting
+         sessionStorage.removeItem('companyData')
+         sessionStorage.removeItem('messageTemplateData')
+
          sessionStorage.setItem(
             'companyData',
             JSON.stringify(companyData.value)

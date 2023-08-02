@@ -3,7 +3,8 @@
       <div class="page relative">
          <div
             @click="print"
-            class="print-btn absolute right-3 top-3 z-10 cursor-pointer"
+            class="print-btn tooltip-primary tooltip tooltip-bottom absolute right-3 top-3 cursor-pointer items-center"
+            data-tip="Print"
          >
             <svg
                xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +104,10 @@
                   </thead>
                   <tbody v-for="(data, key) in messageTemplateData">
                      <tr>
-                        <td>{{ data.sender_id }}</td>
+                        <td class="font-bold">
+                           <span class="font-normal">{{ key + 1 }}</span>
+                           {{ '. ' + data.sender_id }}
+                        </td>
                         <td>{{ data.purpose }}</td>
                         <td>{{ data.date_from }}</td>
                         <td>{{ data.date_to }}</td>
@@ -217,7 +221,10 @@
                   </thead>
                   <tbody v-for="(data, key) in messageTemplateData">
                      <tr>
-                        <td>{{ data.sender_id }}</td>
+                        <td class="font-bold">
+                           <span class="font-normal">{{ key + 1 }}</span>
+                           {{ '. ' + data.sender_id }}
+                        </td>
                         <td>{{ data.purpose }}</td>
                         <td>{{ data.date_from }}</td>
                         <td>{{ data.date_to }}</td>
