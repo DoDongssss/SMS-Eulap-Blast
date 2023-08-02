@@ -44,8 +44,8 @@
          <div class="subpage">
             <div class="flex flex-col font-bold">
                <p>{{ companyData.name }}</p>
-               <p>{{ companyData.city }}</p>
-               <p>{{ companyData.province }}</p>
+               <p>{{ companyData.address }}</p>
+               <p>{{ companyData.province + ',' + companyData.province }}</p>
             </div>
             <h1 class="mt-[1cm] text-center text-[12pt] font-bold">
                Letter of Authorization
@@ -181,11 +181,11 @@
                <div
                   class="relative flex w-[200px] flex-col border-t border-black font-bold"
                >
-                  <div class="absolute left-0 right-0 top-[-170px]">
+                  <div class="absolute left-[-100px] top-[-220px]">
                      <img
                         src="/images/signature.png"
                         alt=""
-                        class="scale-[.6]"
+                        class="scale-[.4]"
                      />
                   </div>
                   <h1>Lemuel Javellana</h1>
@@ -193,10 +193,12 @@
                   <h1>Eulap Software Solutions</h1>
                </div>
             </div>
-            <span
-               class="mt-[1.5cm] flex w-fit border-b border-black text-center font-bold"
-               >Annex A: Message Template</span
-            >
+            <div class="flex items-center justify-center">
+               <span
+                  class="mt-[1.5cm] flex w-fit border-b border-black text-center font-bold"
+                  >Annex A: Message Template</span
+               >
+            </div>
             <!-- table -->
             <div class="mt-[1cm] overflow-x-auto">
                <table width="100%">

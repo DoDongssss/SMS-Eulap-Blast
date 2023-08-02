@@ -5,10 +5,10 @@
          class="flex flex-col gap-8 rounded-md border border-default px-8 py-10"
          @submit.prevent="handleGenerate"
       >
-         <div class="flex flex-col gap-8">
+         <div class="flex flex-col flex-wrap gap-8">
             <h1 class="text-xl font-semibold">Company Information</h1>
             <div class="mt-2 flex flex-wrap gap-6">
-               <div class="flex flex-1 flex-col">
+               <div class="flex min-w-[275px] flex-1 flex-col">
                   <span class="text-[.8rem] font-semibold text-default"
                      ><span class="mr-1 text-red-500">*</span>Company name</span
                   >
@@ -19,43 +19,7 @@
                      required
                   />
                </div>
-               <div class="flex flex-1 flex-col">
-                  <span class="text-[.8rem] font-semibold text-default"
-                     ><span class="mr-1 text-red-500">*</span>Address</span
-                  >
-                  <input
-                     v-model="companyData.city"
-                     type="text"
-                     class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
-                     required
-                  />
-               </div>
-               <div class="flex flex-1 flex-col">
-                  <span class="text-[.8rem] font-semibold text-default"
-                     ><span class="mr-1 text-red-500">*</span>City,
-                     Province</span
-                  >
-                  <input
-                     v-model="companyData.province"
-                     type="text"
-                     class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
-                     required
-                  />
-               </div>
-            </div>
-            <div class="flex flex-wrap gap-6">
-               <div class="flex flex-1 flex-col">
-                  <span class="text-[.8rem] font-semibold text-default"
-                     ><span class="mr-1 text-red-500">*</span>Date</span
-                  >
-                  <input
-                     v-model="companyData.date"
-                     type="date"
-                     class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
-                     required
-                  />
-               </div>
-               <div class="flex flex-1 flex-col">
+               <div class="flex min-w-[275px] flex-1 flex-col">
                   <span class="text-[.8rem] font-semibold text-default"
                      ><span class="mr-1 text-red-500">*</span
                      >CEO/Representative</span
@@ -67,12 +31,60 @@
                      required
                   />
                </div>
-               <div class="flex flex-1 flex-col">
+               <div class="flex min-w-[275px] flex-1 flex-col">
                   <span class="text-[.8rem] font-semibold text-default"
                      ><span class="mr-1 text-red-500">*</span>Position</span
                   >
                   <input
                      v-model="companyData.position"
+                     type="text"
+                     class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
+                     required
+                  />
+               </div>
+            </div>
+            <div class="flex flex-wrap gap-6">
+               <div class="flex min-w-[275px] flex-1 basis-[30%] flex-col">
+                  <span class="text-[.8rem] font-semibold text-default"
+                     ><span class="mr-1 text-red-500">*</span>Date</span
+                  >
+                  <input
+                     v-model="companyData.date"
+                     type="date"
+                     class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
+                     required
+                  />
+               </div>
+               <div class="flex min-w-[275px] flex-1 basis-[70%] flex-col">
+                  <span class="text-[.8rem] font-semibold text-default"
+                     ><span class="mr-1 text-red-500">*</span>Address</span
+                  >
+                  <input
+                     v-model="companyData.address"
+                     type="text"
+                     class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
+                     required
+                  />
+               </div>
+            </div>
+            <div class="flex flex-wrap gap-6">
+               <div class="flex min-w-[275px] flex-1 flex-col">
+                  <span class="text-[.8rem] font-semibold text-default"
+                     ><span class="mr-1 text-red-500">*</span>City</span
+                  >
+                  <input
+                     v-model="companyData.city"
+                     type="text"
+                     class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
+                     required
+                  />
+               </div>
+               <div class="flex min-w-[275px] flex-1 flex-col">
+                  <span class="text-[.8rem] font-semibold text-default"
+                     ><span class="mr-1 text-red-500">*</span> Province</span
+                  >
+                  <input
+                     v-model="companyData.province"
                      type="text"
                      class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
                      required
@@ -92,7 +104,10 @@
                   +
                </button>
             </div>
-            <div v-for="(data, key) in messageTemplateData" class="flex gap-2">
+            <div
+               v-for="(data, key) in messageTemplateData"
+               class="flex flex-wrap gap-2"
+            >
                <div
                   class="relative flex flex-1 flex-col gap-8 rounded-md border border-default/50 p-6"
                >
@@ -101,19 +116,20 @@
                      >{{ key + 1 }}</span
                   >
                   <div class="mt-2 flex flex-wrap gap-6">
-                     <div class="flex flex-1 flex-col">
+                     <div class="flex min-w-[175px] flex-1 flex-col">
                         <span class="text-[.8rem] font-semibold text-default"
                            ><span class="mr-1 text-red-500">*</span>Sender
                            ID</span
                         >
                         <input
+                           maxlength="11"
                            v-model="data.sender_id"
                            type="text"
                            class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
                            required
                         />
                      </div>
-                     <div class="flex flex-1 flex-col">
+                     <div class="flex min-w-[175px] flex-1 flex-col">
                         <span class="text-[.8rem] font-semibold text-default"
                            ><span class="mr-1 text-red-500">*</span
                            >Purpose</span
@@ -125,7 +141,7 @@
                            required
                         />
                      </div>
-                     <div class="flex flex-1 flex-col">
+                     <div class="flex min-w-[175px] flex-1 flex-col">
                         <span class="text-[.8rem] font-semibold text-default"
                            ><span class="mr-1 text-red-500">*</span>Date
                            From</span
@@ -137,7 +153,7 @@
                            required
                         />
                      </div>
-                     <div class="flex flex-1 flex-col">
+                     <div class="flex min-w-[175px] flex-1 flex-col">
                         <span class="text-[.8rem] font-semibold text-default"
                            ><span class="mr-1 text-red-500">*</span>Date
                            To</span
@@ -233,6 +249,7 @@ export default {
       const companyData = ref({
          name: null,
          city: null,
+         address: null,
          province: null,
          date: null,
          CEO: null,
