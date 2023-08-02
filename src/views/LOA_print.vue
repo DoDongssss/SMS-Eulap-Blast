@@ -46,7 +46,7 @@
             <div class="flex flex-col font-bold">
                <p>{{ companyData.name }}</p>
                <p>{{ companyData.address }}</p>
-               <p>{{ companyData.province + ',' + companyData.province }}</p>
+               <p>{{ companyData.city + ',' + companyData.province }}</p>
             </div>
             <h1 class="mt-[1cm] text-center text-[12pt] font-bold">
                Letter of Authorization
