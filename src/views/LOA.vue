@@ -33,7 +33,7 @@
                </div>
                <div class="flex min-w-[275px] flex-1 flex-col">
                   <span class="text-[.8rem] font-semibold text-default"
-                     ><span class="mr-1 text-red-500">*</span>Position</span
+                     >Position</span
                   >
                   <input
                      v-model="companyData.position"
