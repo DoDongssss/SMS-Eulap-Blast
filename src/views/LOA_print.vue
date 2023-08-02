@@ -190,7 +190,11 @@ export default {
       const router = useRouter()
       const companyData = ref({})
       const messageTemplateData = ref({})
-      return { companyData, messageTemplateData }
+      return {
+         router,
+         companyData,
+         messageTemplateData,
+      }
    },
    mounted() {
       if (
@@ -204,10 +208,10 @@ export default {
          console.log(this.companyData.name)
          console.log(this.messageTemplateData[0])
       } else {
-         router.push('/loa')
+         this.router.push('/loa')
       }
 
-      //   window.print()
+      window.print()
    },
 }
 </script>

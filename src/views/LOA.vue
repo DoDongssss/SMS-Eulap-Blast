@@ -21,7 +21,7 @@
                </div>
                <div class="flex flex-1 flex-col">
                   <span class="text-[.8rem] font-semibold text-default"
-                     ><span class="mr-1 text-red-500">*</span>City</span
+                     ><span class="mr-1 text-red-500">*</span>Address</span
                   >
                   <input
                      v-model="companyData.city"
@@ -32,7 +32,8 @@
                </div>
                <div class="flex flex-1 flex-col">
                   <span class="text-[.8rem] font-semibold text-default"
-                     ><span class="mr-1 text-red-500">*</span>Province</span
+                     ><span class="mr-1 text-red-500">*</span>City,
+                     Province</span
                   >
                   <input
                      v-model="companyData.province"
