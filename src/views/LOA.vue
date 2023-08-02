@@ -15,7 +15,7 @@
                   <input
                      v-model="companyData.name"
                      type="text"
-                     class="mt-2 w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
+                     class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
                      required
                   />
                </div>
@@ -26,7 +26,7 @@
                   <input
                      v-model="companyData.city"
                      type="text"
-                     class="mt-2 w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
+                     class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
                      required
                   />
                </div>
@@ -38,7 +38,7 @@
                   <input
                      v-model="companyData.province"
                      type="text"
-                     class="mt-2 w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
+                     class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
                      required
                   />
                </div>
@@ -50,8 +50,8 @@
                   >
                   <input
                      v-model="companyData.date"
-                     type="text"
-                     class="mt-2 w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
+                     type="date"
+                     class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
                      required
                   />
                </div>
@@ -63,7 +63,7 @@
                   <input
                      v-model="companyData.CEO"
                      type="text"
-                     class="mt-2 w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
+                     class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
                      required
                   />
                </div>
@@ -74,7 +74,7 @@
                   <input
                      v-model="companyData.position"
                      type="text"
-                     class="mt-2 w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
+                     class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
                      required
                   />
                </div>
@@ -109,7 +109,7 @@
                         <input
                            v-model="data.sender_id"
                            type="text"
-                           class="mt-2 w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
+                           class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
                            required
                         />
                      </div>
@@ -121,7 +121,7 @@
                         <input
                            v-model="data.purpose"
                            type="text"
-                           class="mt-2 w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
+                           class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
                            required
                         />
                      </div>
@@ -132,8 +132,8 @@
                         >
                         <input
                            v-model="data.date_from"
-                           type="text"
-                           class="mt-2 w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
+                           type="date"
+                           class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
                            required
                         />
                      </div>
@@ -144,8 +144,8 @@
                         >
                         <input
                            v-model="data.date_to"
-                           type="text"
-                           class="mt-2 w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
+                           type="date"
+                           class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
                            required
                         />
                      </div>
@@ -159,7 +159,7 @@
                         <input
                            v-model="data.message"
                            type="text"
-                           class="mt-2 w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
+                           class="mt-2 h-[26px] w-full border-0 border-b border-default pl-1 focus:border-primary focus:outline-none"
                            required
                         />
                      </div>
@@ -282,6 +282,7 @@ export default {
          handleGenerate,
       }
    },
+   methods: {},
    mounted() {
       sessionStorage.removeItem('companyData')
       sessionStorage.removeItem('messageTemplateData')

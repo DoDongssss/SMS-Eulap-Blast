@@ -1,6 +1,46 @@
 <template>
    <div class="book">
-      <div class="page">
+      <div class="page relative">
+         <div
+            @click="print"
+            class="print-btn absolute right-3 top-3 z-10 cursor-pointer"
+         >
+            <svg
+               xmlns="http://www.w3.org/2000/svg"
+               class="ionicon text-red-500"
+               viewBox="0 0 512 512"
+               height="30px"
+               width="30px"
+            >
+               <path
+                  d="M384 368h24a40.12 40.12 0 0040-40V168a40.12 40.12 0 00-40-40H104a40.12 40.12 0 00-40 40v160a40.12 40.12 0 0040 40h24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="38"
+               />
+               <rect
+                  x="128"
+                  y="240"
+                  width="256"
+                  height="208"
+                  rx="24.32"
+                  ry="24.32"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="38"
+               />
+               <path
+                  d="M384 128v-24a40.12 40.12 0 00-40-40H168a40.12 40.12 0 00-40 40v24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="38"
+               />
+               <circle cx="392" cy="184" r="24" />
+            </svg>
+         </div>
          <div class="subpage">
             <div class="flex flex-col font-bold">
                <p>{{ companyData.name }}</p>
@@ -139,8 +179,15 @@
                   <h1>{{ companyData.name }}</h1>
                </div>
                <div
-                  class="flex w-[200px] flex-col border-t border-black font-bold"
+                  class="relative flex w-[200px] flex-col border-t border-black font-bold"
                >
+                  <div class="absolute left-0 right-0 top-[-170px]">
+                     <img
+                        src="/images/signature.png"
+                        alt=""
+                        class="scale-[.6]"
+                     />
+                  </div>
                   <h1>Lemuel Javellana</h1>
                   <h1>President</h1>
                   <h1>Eulap Software Solutions</h1>
@@ -190,11 +237,24 @@ export default {
       const router = useRouter()
       const companyData = ref({})
       const messageTemplateData = ref({})
+
+      const print = () => {
+         window.print()
+      }
       return {
          router,
          companyData,
          messageTemplateData,
+         print,
       }
+   },
+   methods: {
+      changeDateFormat(selectedDate) {
+         const date = new Date(selectedDate)
+         const options = { month: 'long', day: 'numeric', year: 'numeric' }
+         let formattedDate = date.toLocaleDateString(undefined, options)
+         this.companyData.date = formattedDate
+      },
    },
    mounted() {
       if (
@@ -205,13 +265,14 @@ export default {
          this.messageTemplateData = JSON.parse(
             sessionStorage.getItem('messageTemplateData')
          )
-         console.log(this.companyData.name)
-         console.log(this.messageTemplateData[0])
+
+         this.changeDateFormat(this.companyData.date)
       } else {
          this.router.push('/loa')
       }
-
-      window.print()
+      setTimeout(() => {
+         window.print()
+      }, 2000)
    },
 }
 </script>
@@ -252,6 +313,9 @@ export default {
       box-shadow: initial;
       background: initial;
       page-break-after: always;
+   }
+   .print-btn {
+      display: none;
    }
 }
 
