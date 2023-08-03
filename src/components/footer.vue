@@ -147,6 +147,13 @@
                      </a>
                   </div>
                </div>
+               <router-link to="/loa">
+                  <button
+                     class="rounded-md bg-primary/90 px-5 py-3 font-semibold text-white hover:bg-primary"
+                  >
+                     Generate LOA
+                  </button>
+               </router-link>
                <div class="flex w-full flex-col items-center gap-3 xl:w-auto">
                   <p class="font-semibold text-default/80">SOCIAL NETWORKS</p>
                   <div class="flex gap-3">
@@ -198,7 +205,7 @@
 </template>
 
 <script>
-import privacypolicyView from "../components/privacypolicy.vue"
+import privacypolicyView from '../components/privacypolicy.vue'
 export default {
    components: {
       privacypolicyView,
